@@ -3,3 +3,5 @@ ipykernel
 ipywidgets
 matplotlib
 numpy
+plotly
+nbformat
