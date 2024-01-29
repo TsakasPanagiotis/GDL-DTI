@@ -8,3 +8,4 @@ nbformat
 scipy
 pandas
 dash
+torch
