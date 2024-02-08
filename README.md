@@ -31,7 +31,7 @@
 ## representations.ipynb
 
 - define a function that craetes random diffusion tensors
-- define a function for polar decomposition and polar decomposition
+- define a function for spectral decomposition and spectral decomposition
     - run two tests and measure accuracy of going from decomposition to the original d-tensor
 - define a function for quaternion decomposition and quaternion decomposition
     - run two tests and measure accuracy of going from decomposition to the original d-tensor
@@ -52,7 +52,7 @@
 - load the d-tensors, clean signals and noisy signals created by `simulation_data.ipynb`
 - choose a threshold for the maximum eigenvalue based on the percentile it covers
 - shuffle, split and put the data in datasets and dataloaders for training and validation
-- define neural network that works with polar composition
+- define neural network that works with spectral composition
 - define the training and validation functions that return the epoch loss
     - wrapped to return the execution time as well
 - train the model for an arbitrary number of epochs
