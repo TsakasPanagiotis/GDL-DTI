@@ -10,6 +10,7 @@ from typing import Callable, TypeVar
 
 import torch
 import numpy as np
+from tqdm import tqdm
 import matplotlib.pyplot as plt
 from torch.utils.data import Dataset, DataLoader
 
@@ -370,14 +371,14 @@ def main() -> None:
         val_losses = checkpoint['val_losses']
         epochs = checkpoint['epochs']
         
-        logging.info(f'Resuming training from epoch {epochs[-1]}')
+        logging.info(f'Resuming training from epoch {epochs[-1] + 1}')
     
 
     ## TRAIN MODEL
 
     last_epoch = epochs[-1] if epochs else 0
 
-    for epoch in range(last_epoch, last_epoch + HP.num_epochs):
+    for epoch in tqdm(range(last_epoch, last_epoch + HP.num_epochs)):
             
         epoch_train_loss, train_time = train(train_loader, spectral_dnet, loss_fn, optimizer, device)
         epoch_val_loss, eval_time = validate(val_loader, spectral_dnet, loss_fn, device)
@@ -406,13 +407,13 @@ def main() -> None:
             logging.info('Checkpoint saved')
 
 
-        # save losses plot
-        plt.plot(epochs, train_losses, label='Train Loss')
-        plt.plot(epochs, val_losses, label='Validation Loss')
-        plt.xlabel('Epochs')
-        plt.ylabel('Loss')
-        plt.legend()
-        plt.savefig(paths.losses_plot_file)
+    # save losses plot
+    plt.plot(epochs, train_losses, label='Train Loss')
+    plt.plot(epochs, val_losses, label='Validation Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.savefig(paths.losses_plot_file)
 
 
     ## FINISHED TRAINING
