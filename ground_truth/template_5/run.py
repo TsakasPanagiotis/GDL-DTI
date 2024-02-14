@@ -217,6 +217,8 @@ def main():
     logging.info(f'Mean squared reconstruction error median = {np.median(non_linear_errors)}')
     logging.info(f'Mean squared reconstruction error mean = {np.mean(non_linear_errors)}')
     logging.info(f'Mean squared reconstruction error std = {np.std(non_linear_errors)}')
+    logging.info(f'Mean squared reconstruction error max = {np.max(non_linear_errors)}')
+    logging.info(f'Mean squared reconstruction error min = {np.min(non_linear_errors)}')
 
     logging.info(f'Total brain voxels = {np.sum(mask)}')
     logging.info(f'Valid approximated d-tensors = {len(non_linear_lstsq_results)}')

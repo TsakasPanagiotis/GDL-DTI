@@ -154,6 +154,8 @@ def main():
     logging.info(f'Mean squared reconstruction error median = {np.median(linear_errors)}')
     logging.info(f'Mean squared reconstruction error mean = {np.mean(linear_errors)}')
     logging.info(f'Mean squared reconstruction error std = {np.std(linear_errors)}')
+    logging.info(f'Mean squared reconstruction error max = {np.max(linear_errors)}')
+    logging.info(f'Mean squared reconstruction error min = {np.min(linear_errors)}')
 
     logging.info(f'Total brain voxels = {np.sum(mask)}')
     logging.info(f'Valid approximated d-tensors = {len(linear_lstsq_results)}')
