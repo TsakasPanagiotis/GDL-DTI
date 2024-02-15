@@ -1,5 +1,7 @@
 # Custom
 experiments/
+*.npy
+*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
