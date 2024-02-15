@@ -45,6 +45,14 @@ class Paths:
     @property
     def noisy_signals_file(self):
         return os.path.join(self.experiment_path, 'noisy_signals.pt')
+    
+    @property
+    def b_values_file(self):
+        return os.path.join(self.experiment_path, 'b_values.pt')
+    
+    @property
+    def gradients_file(self):
+        return os.path.join(self.experiment_path, 'gradients.pt')
 
 
 def create_selection_mask(b_values_to_select_list: list[float], b_values: np.ndarray) -> np.ndarray:
@@ -147,6 +155,8 @@ def main():
     d_tensors = torch.stack(d_tensors) # shape (num_d_tensors, 3, 3)
     noisy_signals = torch.stack(noisy_signals) # shape (num_d_tensors, len(selection_mask))
 
+    logging.info(f'selected_b_values: {selected_b_values.shape}')
+    logging.info(f'selected_gradients: {selected_gradients.shape}')
     logging.info(f'd_tensors: {d_tensors.shape}')
     logging.info(f'noisy_signals: {noisy_signals.shape}')
     logging.info(f'noisy_signals min: {noisy_signals.min()}')
@@ -157,6 +167,8 @@ def main():
 
     torch.save(d_tensors, paths.d_tensors_file)
     torch.save(noisy_signals, paths.noisy_signals_file)
+    torch.save(selected_b_values, paths.b_values_file)
+    torch.save(selected_gradients, paths.gradients_file)
 
 
 if __name__ == '__main__':
