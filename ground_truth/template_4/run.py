@@ -1,3 +1,7 @@
+'''Load two sets of results from lstsq
+and compare common and equal common voxels results.'''
+
+
 import os
 import pickle
 import logging

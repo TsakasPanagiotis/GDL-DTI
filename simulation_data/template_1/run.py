@@ -1,3 +1,8 @@
+'''Go from b-values, direction vectors and least squares results
+to noisy signals and d-tensors
+and store them as torch tensors.'''
+
+
 import os
 import pickle
 import logging

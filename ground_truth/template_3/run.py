@@ -1,3 +1,8 @@
+'''Go from raw data (nii, b-values, direction vectors)
+to masked data (median_otsu brain voxels)
+to masked signal range analysis per b-value.'''
+
+
 import os
 import logging
 from datetime import datetime

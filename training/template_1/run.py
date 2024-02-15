@@ -1,3 +1,12 @@
+'''Load and filter data based on threshold eigenvalue.
+Create simple datasets and dataloaders.
+Create basic MLP model that uses spectral composition.
+MSE loss and AdamW optimizer.
+Option to resume training.
+Epoch loop with basic train and validation steps.
+Save best checkpoint and plot losses.'''
+
+
 import os
 import time
 import random

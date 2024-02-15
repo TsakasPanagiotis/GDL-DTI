@@ -1,3 +1,8 @@
+'''Go from raw data (nii, b-values, direction vectors)
+to masked data (median_otsu brain voxels)
+to numpy linear least squares results.'''
+
+
 import os
 import pickle
 import logging

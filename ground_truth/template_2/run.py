@@ -1,3 +1,9 @@
+'''Go from raw data (nii, b-values, direction vectors)
+to masked data (median_otsu brain voxels)
+to scipy non-linear least squares results
+using the same setup as in template_1 for numpy linear least squares.'''
+
+
 import os
 import pickle
 import logging

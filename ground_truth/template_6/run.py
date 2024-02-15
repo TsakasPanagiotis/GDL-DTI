@@ -1,3 +1,10 @@
+'''Go from raw data (nii, b-values, direction vectors)
+to masked data (median_otsu brain voxels)
+to scipy non-linear least squares results
+using spectral composition almost like the neural network
+by setting bounds instead of using sigmoid.'''
+
+
 import os
 import pickle
 import logging
