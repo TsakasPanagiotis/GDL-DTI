@@ -44,7 +44,7 @@ class Hyperparameters:
 
 @dataclass
 class Paths:
-    experiments_dir = os.path.join('training', 'template_1', 'experiments')
+    experiments_dir = os.path.join('fc_network', 'template_1', 'experiments')
     experiment_name = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
     @property
