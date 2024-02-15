@@ -6,11 +6,11 @@ import os
 import pickle
 import logging
 from datetime import datetime
+from dataclasses import dataclass
+from argparse import ArgumentParser
 
 import numpy as np
 from tqdm import tqdm
-from dataclasses import dataclass
-from argparse import ArgumentParser
 
 
 @dataclass

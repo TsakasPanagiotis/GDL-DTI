@@ -8,6 +8,7 @@ import os
 import pickle
 import logging
 from datetime import datetime
+from dataclasses import dataclass
 
 import numpy as np
 from tqdm import tqdm
@@ -15,7 +16,6 @@ import nibabel as nib
 import matplotlib.pyplot as plt
 from scipy.optimize import least_squares
 from dipy.segment.mask import median_otsu
-from dataclasses import dataclass
 
 
 @dataclass
