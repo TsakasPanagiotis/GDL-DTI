@@ -50,13 +50,13 @@ def evaluate_model(model, dataloader, device) -> int:
     model.eval()    
     
     with torch.no_grad():
-        for d_tensor, noisy_signal in tqdm(dataloader):
+        for d_tensors, noisy_signals in tqdm(dataloader):
             
-            d_tensor = d_tensor.to(device)
-            noisy_signal = noisy_signal.to(device)
+            d_tensors = d_tensors.to(device)
+            noisy_signals = noisy_signals.to(device)
             
-            pred_d_tensor = model(noisy_signal)
-            _, info = torch.linalg.cholesky_ex(pred_d_tensor)
+            pred_d_tensors = model(noisy_signals)
+            _, info = torch.linalg.cholesky_ex(pred_d_tensors)
             invalid_count += (info != 0).sum().item()
     
     return invalid_count
