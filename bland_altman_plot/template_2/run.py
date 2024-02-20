@@ -80,10 +80,10 @@ def main():
         raise ValueError('baseline_tensors and simulation_tensors have different shapes')
 
     
-    ## PARITY PLOT
+    ## BLAND-ALTMAN PLOT
 
     fig, axs = plt.subplots(3, 3, figsize=(15, 15))
-    fig.suptitle('Parity plot for the diffusion tensor elements')
+    fig.suptitle('Bland-Altman plot for the diffusion tensor elements')
 
     # iterate over the elements of the upper triangular part
     for row in range(3):
