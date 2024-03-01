@@ -9,3 +9,7 @@ scipy
 pandas
 dash
 torch
+torchvision
+git+https://github.com/AMLab-Amsterdam/lie_learn
+py3nj
+escnn
