@@ -1,9 +1,10 @@
-'''Go from raw data (nii, b-values, direction vectors)
-to masked data (median_otsu brain voxels)
-to masked signal range analysis per b-value.'''
+'''Load raw data (nii, b-values, direction vectors).
+Get masked data (brain voxels) with median_otsu filter.
+Analyze masked signal range per b-value in histograms.'''
 
 
 import os
+import pickle
 import logging
 from datetime import datetime
 
@@ -23,7 +24,7 @@ class Hyperparameters:
 
 @dataclass
 class Paths:
-    experiments_dir = os.path.join('ground_truth', 'template_3', 'experiments')
+    experiments_dir = os.path.join('raw_data_analysis', 'template_1', 'experiments')
     experiment_name = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     
     nii_gz_path = 'C:/Users/panag/Desktop/Test/mgh_1001/diff/preproc/mri/diff_preproc.nii.gz'
@@ -41,9 +42,11 @@ class Paths:
     
     @property
     def ranges_plot_file(self):
-        return os.path.join(
-            self.experiment_path,
-            'masked signal intensity histograms per b-value.png')
+        return os.path.join(self.experiment_path, 'masked signal intensity histograms per b-value.png')
+
+    @property
+    def hyperparameters_file(self):
+        return os.path.join(self.experiment_path, 'hyperparameters.pkl')
 
 
 def main():
@@ -59,18 +62,23 @@ def main():
 
     HP = Hyperparameters(**vars(args))
 
+    os.makedirs(paths.experiment_path)
+
+    with open(paths.hyperparameters_file, 'wb') as f:
+        pickle.dump(HP, f)
+
 
     ## LOGGING
-
-    os.makedirs(paths.experiment_path)
     
     logging.basicConfig(
         filename=paths.log_file,
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s')
     
+    logging.info('Hyperparameters:')
     for key, value in vars(HP).items():
         logging.info(f'{key}: {value}')
+    logging.info('')
     
     
     ## NII DATA
