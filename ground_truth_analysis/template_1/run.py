@@ -22,7 +22,7 @@ class Hyperparameters:
 
 @dataclass
 class Paths:
-    experiments_dir = os.path.join('ground_truth', 'template_4', 'experiments')
+    experiments_dir = os.path.join('ground_truth_analysis', 'template_1', 'experiments')
     experiment_name = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
     @property
@@ -32,11 +32,17 @@ class Paths:
     @property
     def log_file(self):
         return os.path.join(self.experiment_path, 'log.txt')
+    
+    @property
+    def hyperparameters_file(self):
+        return os.path.join(self.experiment_path, 'hyperparameters.pkl')
 
 
 def main():
 
     paths = Paths()
+
+    os.makedirs(paths.experiment_path)
 
 
     ## HYPERPARAMETERS
@@ -48,18 +54,21 @@ def main():
 
     HP = Hyperparameters(**vars(args))
 
+    with open(paths.hyperparameters_file, 'wb') as f:
+        pickle.dump(HP, f)
+
 
     ## LOGGING
-
-    os.makedirs(paths.experiment_path)
     
     logging.basicConfig(
         filename=paths.log_file,
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s')
     
+    logging.info('Hyperparameters:')
     for key, value in vars(HP).items():
         logging.info(f'{key}: {value}')
+    logging.info('')
 
 
     ## LOAD RESULTS
@@ -72,6 +81,7 @@ def main():
     
     logging.info(f'lstsq_results_1: {len(lstsq_results_1)}')
     logging.info(f'lstsq_results_2: {len(lstsq_results_2)}')
+    logging.info('')
     
 
     ## COMPARE RESULTS
