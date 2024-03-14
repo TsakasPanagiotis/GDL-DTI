@@ -2,7 +2,10 @@
 experiments/
 *.npy
 *.pt
-raw_data/
+raw_data/*/data/
+phlippe uvadlc_notebooks DL2_Geometric_deep_learning
+QUVA-Lab escnn examples
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
