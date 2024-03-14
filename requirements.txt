@@ -3,6 +3,7 @@ ipykernel
 ipywidgets
 matplotlib
 numpy
+tqdm
 plotly
 nbformat
 scipy
@@ -13,3 +14,4 @@ torchvision
 git+https://github.com/AMLab-Amsterdam/lie_learn
 py3nj
 escnn
+e3nn
