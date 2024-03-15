@@ -1,18 +1,21 @@
+'''[MGH HCP Adult Diffusion](https://db.humanconnectome.org/data/projects/MGH_DIFF) | MGH_1001'''
+
+
 import pickle
-from dataclasses import dataclass
 
 
-@dataclass
 class RawDataPaths:
-    b_values_file: str = 'raw_data/mgh_1001/data/bvals.txt'
-    b_vectors_file: str = 'raw_data/mgh_1001/data/bvecs_moco_norm.txt'
-    raw_data_file: str = 'raw_data/mgh_1001/data/diff_preproc.nii.gz'
+    def __init__(self) -> None:
+        self.b_values_file = 'raw_data/mgh_1001/data/bvals.txt'
+        self.b_vectors_file = 'raw_data/mgh_1001/data/bvecs_moco_norm.txt'
+        self.raw_data_file = 'raw_data/mgh_1001/data/diff_preproc.nii.gz'
+        self.paths_file = 'raw_data/mgh_1001/paths.pkl'
 
 
 def main():
     paths = RawDataPaths()
 
-    with open('raw_data/mgh_1001/paths.pkl', 'wb') as f:
+    with open(paths.paths_file, 'wb') as f:
         pickle.dump(paths, f)
 
 
