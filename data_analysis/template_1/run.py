@@ -10,11 +10,12 @@ import pickle
 import logging
 from typing import Protocol
 from datetime import datetime
+from dataclasses import dataclass
+from argparse import ArgumentParser
 
 import numpy as np
 import nibabel as nib
 import matplotlib.pyplot as plt
-from argparse import ArgumentParser
 
 
 class RawDataPaths(Protocol):
@@ -31,10 +32,10 @@ class ProcessedDataPaths(Protocol):
     mask_file: str
 
 
+@dataclass
 class DataAnalysisHyperparameters:  
-    def __init__(self, b_zero_mean: bool, processed_data_paths_pkl: str) -> None:
-        self.b_zero_mean = b_zero_mean
-        self.processed_data_paths_pkl = processed_data_paths_pkl
+    b_zero_mean: bool
+    processed_data_paths_pkl: str
 
 
 class DataAnalysisPaths:
