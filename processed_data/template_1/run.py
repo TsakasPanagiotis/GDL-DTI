@@ -7,6 +7,7 @@ import pickle
 import logging
 from typing import Protocol
 from datetime import datetime
+from dataclasses import dataclass
 from argparse import ArgumentParser
 
 import numpy as np
@@ -20,9 +21,9 @@ class RawDataPaths(Protocol):
     raw_data_file: str
 
 
+@dataclass
 class ProcessedDataHyperparameters:
-    def __init__(self, raw_data_paths_pkl: str) -> None:
-        self.raw_data_paths_pkl = raw_data_paths_pkl
+    raw_data_paths_pkl: str
 
 
 class ProcessedDataPaths:
