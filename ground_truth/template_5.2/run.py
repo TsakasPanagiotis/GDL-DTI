@@ -52,7 +52,8 @@ class GroundTruthPaths:
         self.experiment_path = os.path.join('ground_truth', 'template_5.2', 'experiments', 
                                             datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
         self.log_file = os.path.join(self.experiment_path, 'log.txt')
-        self.results_file = os.path.join(self.experiment_path, 'results.pkl')
+        self.d_tensors_file = os.path.join(self.experiment_path, 'd_tensors.pkl')
+        self.eig_pairs_file = os.path.join(self.experiment_path, 'eig_pairs.pkl')
         self.hyperparameters_file = os.path.join(self.experiment_path, 'hparams.pkl')
         self.paths_file = os.path.join(self.experiment_path, 'paths.pkl')
         self.errors_file = os.path.join(self.experiment_path, 'errors.pkl')
@@ -156,12 +157,16 @@ def main():
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s')
     
+    logging.info('Ground truth experiment:')
+    logging.info(ground_truth_paths.experiment_path)
+    logging.info('')
+    
 
     ## GROUND TRUTH HYPERPARAMETERS
 
     parser = ArgumentParser()
     parser.add_argument('--threshold_eigval', type=float, required=True)
-    parser.add_argument('--b_values_to_select', type=float, nargs='+', required=True)
+    parser.add_argument('--b_values_to_select', type=float, nargs='*')
     parser.add_argument('--processed_data_paths_pkl', type=str, required=True)
     args = parser.parse_args()
 
@@ -210,7 +215,8 @@ def main():
     pbar = tqdm(total=brain_voxels)
 
     invalid_count = 0
-    results: dict[tuple[int,int,int], tuple[np.ndarray, np.ndarray, np.ndarray]] = {}
+    d_tensors: dict[tuple[int,int,int], np.ndarray] = {}
+    eig_pairs: dict[tuple[int,int,int], tuple[np.ndarray,np.ndarray]] = {}
     errors: dict[tuple[int,int,int], np.ndarray] = {}
     
     for i in range(raw_data.shape[0]):
@@ -222,6 +228,7 @@ def main():
                     S0 = raw_data[i, j, k, zero_mask].mean()
                     g = b_vectors[selection_mask, :]
                     b = b_values[selection_mask]
+                    
                     params = np.random.rand(6)
 
                     result = least_squares(
@@ -246,8 +253,9 @@ def main():
                         pbar.update()
                         continue
                     
-                    results[(i,j,k)] = (R, E, D)
-                    
+                    d_tensors[(i,j,k)] = D
+                    eig_pairs[(i,j,k)] = (R, E)
+
                     error = S0 * np.exp(- b * np.einsum('bi,ij,bj->b', g, D, g)) - S
                     errors[(i,j,k)] = error
 
@@ -255,16 +263,18 @@ def main():
 
     pbar.close()
 
-    with open(ground_truth_paths.results_file, 'wb') as f:
-        pickle.dump(results, f)
+    with open(ground_truth_paths.d_tensors_file, 'wb') as f:
+        pickle.dump(d_tensors, f)
+
+    with open(ground_truth_paths.eig_pairs_file, 'wb') as f:
+        pickle.dump(eig_pairs, f)
 
     with open(ground_truth_paths.errors_file, 'wb') as f:
         pickle.dump(errors, f)
 
     logging.info(f'Total brain voxels = {brain_voxels}')
-    logging.info(f'Valid approximated d-tensors = {len(results)}')
+    logging.info(f'Valid approximated d-tensors = {len(d_tensors)}')
     logging.info(f'Invalid approximated d-tensors = {invalid_count}')
-    logging.info('')
 
 
 if __name__ == '__main__':
