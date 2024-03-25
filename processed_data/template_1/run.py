@@ -1,5 +1,6 @@
 '''Basic processing of raw data.
-Store b-values, b-vectors, and median_otsu mask.'''
+Store b-values, b-vectors, median_otsu mask
+and processed data based on mask as 2D array.'''
 
 
 import os
@@ -36,6 +37,7 @@ class ProcessedDataPaths:
         self.b_values_file = os.path.join(self.experiment_path, 'bvals.npy')
         self.b_vectors_file = os.path.join(self.experiment_path, 'bvecs.npy')
         self.mask_file = os.path.join(self.experiment_path, 'mask.npy')
+        self.processed_data_file = os.path.join(self.experiment_path, 'data.npy')
 
 
 def main():
@@ -100,7 +102,7 @@ def main():
     np.save(proc_data_paths.b_values_file, b_values)
 
 
-    ## DIFF DATA
+    ## MEDIAN-OTSU MASK
     
     raw_data  = nib.load(raw_data_paths.raw_data_file).get_fdata() # type: ignore
     
@@ -108,6 +110,15 @@ def main():
     masked_data, mask = median_otsu(raw_data, vol_idx=np.where(b_values == 0.0)[0])
 
     np.save(proc_data_paths.mask_file, mask)
+
+
+    ## PROCESSED DATA
+
+    processed_data = raw_data[mask]
+
+    np.save(proc_data_paths.processed_data_file, processed_data)
+
+    logging.info(f'Processed data shape: {processed_data.shape}')
 
 
 if __name__ == '__main__':
