@@ -34,6 +34,7 @@ class ProcessedDataPaths:
         self.log_file = os.path.join(self.experiment_path, 'log.txt')
         self.paths_file = os.path.join(self.experiment_path, 'paths.pkl')
         self.hyperparameters_file = os.path.join(self.experiment_path, 'hparams.pkl')
+        
         self.b_values_file = os.path.join(self.experiment_path, 'bvals.npy')
         self.b_vectors_file = os.path.join(self.experiment_path, 'bvecs.npy')
         self.mask_file = os.path.join(self.experiment_path, 'mask.npy')
@@ -60,6 +61,10 @@ def main():
         filename=proc_data_paths.log_file,
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s')
+    
+    logging.info('Processed data experiment:')
+    logging.info(proc_data_paths.experiment_path)
+    logging.info('')
 
 
     ## PROCESSED DATA HYPERPARAMETERS
