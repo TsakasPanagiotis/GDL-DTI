@@ -1,12 +1,12 @@
-'''Load raw data.
-Load processed b-values, b-vectors, and median_otsu mask.
+'''Load processed b-values, b-vectors and data.
 Use signals from selected b-values.
 Get scipy nonlinear linear least squares results
-by approximating the lower triangular part 
+by approximating the lower triangular matrix 
 of the Cholesky decomposition of the diffusion tensor.
+Option for bounds and S0_correction.
 Only keep symmetric positive definite tensors 
 with eigenvalues below a threshold.
-Save diffusion tensors and errors.'''
+Save diffusion tensors, S0_corrections and valid indices.'''
 
 
 import os
@@ -19,23 +19,13 @@ from argparse import ArgumentParser
 
 import numpy as np
 from tqdm import tqdm
-import nibabel as nib
 from scipy.optimize import least_squares
 
 
-class RawDataPaths(Protocol):
-    raw_data_file: str
-
-
-class ProcessedDataHyperparameters(Protocol):
-    raw_data_paths_pkl: str
-
-
 class ProcessedDataPaths(Protocol):
-    hyperparameters_file: str
     b_vectors_file: str
     b_values_file: str
-    mask_file: str
+    processed_data_file: str
 
 
 @dataclass
@@ -44,6 +34,7 @@ class GroundTruthHyperparameters:
     b_values_to_select: list[float]
     processed_data_paths_pkl: str
     bounds: list[float]
+    S0_correction: bool
 
 
 class GroundTruthPaths:
@@ -51,10 +42,12 @@ class GroundTruthPaths:
         self.experiment_path = os.path.join('ground_truth', 'template_8', 'experiments', 
                                             datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
         self.log_file = os.path.join(self.experiment_path, 'log.txt')
-        self.d_tensors_file = os.path.join(self.experiment_path, 'd_tensors.pkl')
-        self.hyperparameters_file = os.path.join(self.experiment_path, 'hparams.pkl')
         self.paths_file = os.path.join(self.experiment_path, 'paths.pkl')
-        self.errors_file = os.path.join(self.experiment_path, 'errors.pkl')
+        self.hyperparameters_file = os.path.join(self.experiment_path, 'hparams.pkl')
+        
+        self.d_tensors_file = os.path.join(self.experiment_path, 'd_tensors.npy')
+        self.S0_corrections_file = os.path.join(self.experiment_path, 'S0_corrections.npy')
+        self.valid_indices_file = os.path.join(self.experiment_path, 'valid.npy')
 
 
 def create_masks(b_values_to_select_list: list[float], b_values: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -65,14 +58,17 @@ def create_masks(b_values_to_select_list: list[float], b_values: np.ndarray) -> 
     if len(b_values_to_select) == 0:
         b_values_to_select = unique_nonzero_b_values
         logging.warning(f'b_values_to_select is empty. Using all nonzero b-values: {b_values_to_select}')
+        logging.warning('')
     
     if 0.0 in b_values_to_select:
         logging.error('b_values_to_select must not contain 0.0')
         raise ValueError('b_values_to_select must not contain 0.0')
 
     if not b_values_to_select.issubset(unique_nonzero_b_values):
-        logging.error(f'Invalid b_values_to_select: {b_values_to_select.difference(unique_nonzero_b_values)}. Valid values are: {unique_nonzero_b_values}')
-        raise ValueError(f'Invalid b_values_to_select: {b_values_to_select.difference(unique_nonzero_b_values)}. Valid values are: {unique_nonzero_b_values}')
+        logging.error(f'Invalid b_values_to_select: {b_values_to_select.difference(unique_nonzero_b_values)}. ' \
+                      + f'Valid values are: {unique_nonzero_b_values}')
+        raise ValueError(f'Invalid b_values_to_select: {b_values_to_select.difference(unique_nonzero_b_values)}. ' \
+                         + f'Valid values are: {unique_nonzero_b_values}')
 
     selection_mask = np.isin(b_values, list(b_values_to_select))
     zero_mask = b_values == 0.0
@@ -80,7 +76,8 @@ def create_masks(b_values_to_select_list: list[float], b_values: np.ndarray) -> 
     return selection_mask, zero_mask
 
 
-def reconstruct(params: np.ndarray) -> np.ndarray:
+def reconstruct(params: np.ndarray) -> tuple[np.ndarray, float]:
+
     lower_triangular = np.zeros((3,3))
     lower_triangular[0,0] = params[0]
     lower_triangular[1,0] = params[1]
@@ -88,12 +85,20 @@ def reconstruct(params: np.ndarray) -> np.ndarray:
     lower_triangular[2,0] = params[3]
     lower_triangular[2,1] = params[4]
     lower_triangular[2,2] = params[5]
-    return lower_triangular @ lower_triangular.T
+    D = lower_triangular @ lower_triangular.T
+
+    S0_correction = 1.0
+
+    if len(params) == 7:
+        S0_correction = params[6]
+        
+    return D, S0_correction
 
 
-def loss(params, S, S0, g, b):
-    D = reconstruct(params)
-    error = S0 * np.exp(- b * np.einsum('bi,ij,bj->b', g, D, g)) - S
+def loss(params, S_norm, g, b):
+    D, S0_correction = reconstruct(params)
+    S_norm_reconstructed = S0_correction * np.exp(- b * np.einsum('bi,ij,bj->b', g, D, g))
+    error = S_norm_reconstructed - S_norm
     return error
 
 
@@ -129,7 +134,8 @@ def main():
     parser.add_argument('--threshold_eigval', type=float, required=True)
     parser.add_argument('--b_values_to_select', type=float, nargs='*')
     parser.add_argument('--processed_data_paths_pkl', type=str, required=True)
-    parser.add_argument('--bounds', type=float, nargs=2, default=[-np.inf,np.inf])
+    parser.add_argument('--bounds', type=float, nargs=2, default=[-10,10])
+    parser.add_argument('--S0_correction', action='store_true')
     args = parser.parse_args()
 
     ground_truth_hparams = GroundTruthHyperparameters(**vars(args))
@@ -147,93 +153,96 @@ def main():
 
     with open(ground_truth_hparams.processed_data_paths_pkl, 'rb') as f:
         proc_data_paths: ProcessedDataPaths = pickle.load(f)
-    
-
-    ## PROCESSED DATA HYPERPARAMETERS
-
-    with open(proc_data_paths.hyperparameters_file, 'rb') as f:
-        proc_data_hparams: ProcessedDataHyperparameters = pickle.load(f)
-    
-
-    ## RAW DATA PATHS
-
-    with open(proc_data_hparams.raw_data_paths_pkl, 'rb') as f:
-        raw_data_paths: RawDataPaths = pickle.load(f)
 
 
     ## DATA
-        
-    raw_data  = nib.load(raw_data_paths.raw_data_file).get_fdata() # type: ignore
-    b_values = np.load(proc_data_paths.b_values_file)
-    b_vectors = np.load(proc_data_paths.b_vectors_file)
-    mask = np.load(proc_data_paths.mask_file)
-
-
-    ## NON LINEAR LEAST SQUARES
+    
+    b_values: np.ndarray = np.load(proc_data_paths.b_values_file)
+    b_vectors: np.ndarray = np.load(proc_data_paths.b_vectors_file)
+    proc_data: np.ndarray = np.load(proc_data_paths.processed_data_file)
 
     selection_mask, zero_mask = create_masks(ground_truth_hparams.b_values_to_select, b_values)
 
-    brain_voxels: int = mask.sum()
-    pbar = tqdm(total=brain_voxels)
 
+    ## NON LINEAR LEAST SQUARES
+    
+    min_val, max_val = ground_truth_hparams.bounds
+    
+    # diagonal elements of lower triangular matrix must be positive
+    #              [0,0] -  [1,0] -  [1,1] -  [2,0] -  [2,1] -  [2,2]
+    min_bounds = [      0, min_val,       0, min_val, min_val,       0]
+    max_bounds = [max_val, max_val, max_val, max_val, max_val, max_val]
+
+    if ground_truth_hparams.S0_correction:
+        min_bounds.append(0)
+        max_bounds.append(2)
+
+    d_tensors = []
+    S0_corrections = []
+    valid_indices = []
     invalid_count = 0
-    d_tensors: dict[tuple[int,int,int], np.ndarray] = {}
-    errors: dict[tuple[int,int,int], np.ndarray] = {}
+    bad_count = 0
 
-    for i in range(raw_data.shape[0]):
-        for j in range(raw_data.shape[1]):
-            for k in range(raw_data.shape[2]):
-                if mask[i,j,k]:
+    for row_index in tqdm(range(proc_data.shape[0])):
 
-                    S = raw_data[i, j, k, selection_mask]
-                    S0 = raw_data[i, j, k, zero_mask].mean()
-                    g = b_vectors[selection_mask, :]
-                    b = b_values[selection_mask]
-                    
-                    params = np.random.rand(6)
+        signal = proc_data[row_index, :]
 
-                    result = least_squares(
-                        loss, 
-                        params, 
-                        args=(S, S0, g, b),
-                        bounds=(ground_truth_hparams.bounds[0],
-                                ground_truth_hparams.bounds[1])
-                    )
+        S = signal[selection_mask]
+        S0 = signal[zero_mask].mean()
+        g = b_vectors[selection_mask, :]
+        b = b_values[selection_mask]
 
-                    D = reconstruct(result.x)
-                    
-                    # D should be symmetric positive definite
-                    try:
-                        L = np.linalg.cholesky(D)
-                    except:
-                        invalid_count += 1
-                        pbar.update()
-                        continue
+        if S0 == 0.0:
+            bad_count += 1
+            continue
+        
+        S_norm = S / S0
 
-                    # the maximum eigenvalue of D should be lower than the threshold
-                    if np.max(np.linalg.eigvalsh(D)) > ground_truth_hparams.threshold_eigval:
-                        invalid_count += 1
-                        pbar.update()
-                        continue
-                    
-                    d_tensors[(i,j,k)] = D
-                    
-                    error = S0 * np.exp(- b * np.einsum('bi,ij,bj->b', g, D, g)) - S
-                    errors[(i,j,k)] = error
+        params = np.random.rand(6)
 
-                    pbar.update()
+        if ground_truth_hparams.S0_correction:
+            params = np.append(params, 1.0) # S0_correction initial value
 
-    pbar.close()
-                    
-    with open(ground_truth_paths.d_tensors_file, 'wb') as f:
-        pickle.dump(d_tensors, f)
+        result = least_squares(
+            loss, 
+            params, 
+            args=(S_norm, g, b),
+            bounds=(min_bounds, max_bounds)
+        )
 
-    with open(ground_truth_paths.errors_file, 'wb') as f:
-        pickle.dump(errors, f)
+        D, S0_correction = reconstruct(result.x)
+        
+        # D should be symmetric positive definite
+        try:
+            L = np.linalg.cholesky(D)
+        except:
+            invalid_count += 1
+            continue
 
-    logging.info(f'Total brain voxels = {brain_voxels}')
-    logging.info(f'Valid approximated d-tensors = {len(d_tensors)}')
+        # the maximum eigenvalue of D should be lower than the threshold
+        if np.max(np.linalg.eigvalsh(D)) > ground_truth_hparams.threshold_eigval:
+            invalid_count += 1
+            continue
+        
+        d_tensors.append(D)
+        S0_corrections.append(S0_correction)
+        valid_indices.append(row_index)
+
+        if len(d_tensors) == 1_000:
+            break
+
+    d_tensors = np.stack(d_tensors, axis=0)
+    S0_corrections = np.array(S0_corrections)
+    valid_indices = np.array(valid_indices)
+
+    np.save(ground_truth_paths.d_tensors_file, d_tensors)
+    np.save(ground_truth_paths.S0_corrections_file, S0_corrections)
+    np.save(ground_truth_paths.valid_indices_file, valid_indices)
+
+    logging.info(f'Total brain voxels = {proc_data.shape[0]}')
+    logging.info(f'Valid approximated d-tensors = {d_tensors.shape[0]}')
     logging.info(f'Invalid approximated d-tensors = {invalid_count}')
+    logging.info(f'Bad signals = {bad_count}')
 
 
 if __name__ == '__main__':
