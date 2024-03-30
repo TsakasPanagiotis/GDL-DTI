@@ -1,19 +1,22 @@
 '''Basic processing of raw data.
-Store b-values, b-vectors, median_otsu mask
-and processed data based on mask as 2D array.'''
+Store b-values, b-vectors, median_otsu mask,
+processed data based on mask as 2D array
+and b0 images.'''
 
 
 import os
 import pickle
 import logging
-from typing import Protocol
+from typing import Protocol, cast
 from datetime import datetime
 from dataclasses import dataclass
 from argparse import ArgumentParser
 
 import numpy as np
 import nibabel as nib
-from dipy.segment.mask import median_otsu
+from dipy.segment.threshold import otsu
+from dipy.segment.mask import multi_median
+from nibabel.spatialimages import SpatialImage
 
 
 class RawDataPaths(Protocol):
@@ -39,6 +42,17 @@ class ProcessedDataPaths:
         self.b_vectors_file = os.path.join(self.experiment_path, 'bvecs.npy')
         self.mask_file = os.path.join(self.experiment_path, 'mask.npy')
         self.processed_data_file = os.path.join(self.experiment_path, 'data.npy')
+        self.b0_images_file = os.path.join(self.experiment_path, 'b0_images.nii.gz')
+
+
+def custom_median_otsu(input_volume: np.ndarray, vol_idx: np.ndarray) -> np.ndarray:
+
+    b0vol: np.ndarray = np.mean(input_volume[..., tuple(vol_idx)], axis=3)
+    mask: np.ndarray = multi_median(b0vol, median_radius=4, numpass=4)
+    thresh: float = otsu(mask)
+    mask = mask > thresh
+
+    return mask.astype(bool)
 
 
 def main():
@@ -96,6 +110,9 @@ def main():
 
     np.save(proc_data_paths.b_vectors_file, b_vectors)
 
+    logging.info(f'b_vectors: {b_vectors.shape}')
+    logging.info('')
+
 
     ## B-VALUES
 
@@ -106,24 +123,44 @@ def main():
 
     np.save(proc_data_paths.b_values_file, b_values)
 
+    logging.info(f'b_values: {np.unique(b_values)}')
+    logging.info('')
+
 
     ## MEDIAN-OTSU MASK
     
-    raw_data  = nib.load(raw_data_paths.raw_data_file).get_fdata() # type: ignore
+    images  = cast(SpatialImage, nib.loadsave.load(raw_data_paths.raw_data_file))
+    
+    data = images.get_fdata()
     
     # use b-value = 0.0 for stronger brain signal to get the mask
-    masked_data, mask = median_otsu(raw_data, vol_idx=np.where(b_values == 0.0)[0])
+    mask = custom_median_otsu(data, vol_idx=np.where(b_values == 0.0)[0])
 
     np.save(proc_data_paths.mask_file, mask)
+
+    logging.info(f'Mask: {mask.shape}')
+    logging.info('')
 
 
     ## PROCESSED DATA
 
-    processed_data = raw_data[mask]
+    processed_data = data[mask]
 
     np.save(proc_data_paths.processed_data_file, processed_data)
 
-    logging.info(f'Processed data shape: {processed_data.shape}')
+    logging.info(f'Processed data: {processed_data.shape}')
+    logging.info('')
+
+
+    ## B0 IMAGE
+
+    b0_images = data[:, :, :, b_values == 0.0].mean(axis=-1)
+
+    b0_images_nii = nib.nifti1.Nifti1Image(b0_images, images.affine)
+
+    nib.loadsave.save(b0_images_nii, proc_data_paths.b0_images_file)
+
+    logging.info(f'b0_images: {b0_images.shape}')
 
 
 if __name__ == '__main__':
