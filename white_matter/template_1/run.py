@@ -14,19 +14,17 @@ from dataclasses import dataclass
 from argparse import ArgumentParser
 
 import numpy as np
-import nibabel as nib
-import matplotlib.pyplot as plt
 
 
-class ProcessedDataPaths(Protocol):
-    b0_images_file: str
+class SegmentationPaths(Protocol):
+    segmentation_npy_file: str
+    b0_images_npy_file: str
 
 
 @dataclass
 class WhiteMatterHyperparameters:
-    processed_data_paths_pkl: str
-    segmentation_niigz_file: str
-    slices: list[float]
+    segmentation_paths_pkl: str
+    slices: list[int]
 
 
 class WhiteMatterPaths:
@@ -38,7 +36,6 @@ class WhiteMatterPaths:
         self.hyperparameters_file = os.path.join(self.experiment_path, 'hparams.pkl')
 
         self.b0_mean_file = os.path.join(self.experiment_path, 'b0_mean.npy')
-        self.slice_plot_file = os.path.join(self.experiment_path, 'slice_plot.png')
 
 
 def main():
@@ -70,9 +67,8 @@ def main():
     ## WHITE MATTER HYPERPARAMETERS
 
     parser = ArgumentParser()
-    parser.add_argument('--processed_data_paths_pkl', type=str, required=True)
-    parser.add_argument('--segmentation_niigz_file', type=str, required=True)
-    parser.add_argument('--slices', type=int, nargs=2, default=[-10,10])
+    parser.add_argument('--segmentation_paths_pkl', type=str, required=True)
+    parser.add_argument('--slices', type=int, nargs=2, required=True)
     args = parser.parse_args()
 
     white_matter_hparams = WhiteMatterHyperparameters(**vars(args))
@@ -86,19 +82,19 @@ def main():
     logging.info('')
 
 
-    ## PROCESSED DATA PATHS
+    ## SEGMENTATION PATHS
 
-    with open(white_matter_hparams.processed_data_paths_pkl, 'rb') as f:
-        proc_data_paths: ProcessedDataPaths = pickle.load(f)
+    with open(white_matter_hparams.segmentation_paths_pkl, 'rb') as f:
+        segmentation_paths: SegmentationPaths = pickle.load(f)
     
 
     ## DATA
     
     # 3D float array of b0 images
-    b0_images: np.ndarray = nib.loadsave.load(proc_data_paths.b0_images_file).get_fdata() # type: ignore
+    b0_images: np.ndarray = np.load(segmentation_paths.b0_images_npy_file)
 
     # 3D array of white matter boolean mask
-    white_matter_mask: np.ndarray = nib.loadsave.load(white_matter_hparams.segmentation_niigz_file).get_fdata() > 0 # type: ignore
+    white_matter_mask: np.ndarray = np.load(segmentation_paths.segmentation_npy_file)
 
     
     ## B0 MEAN
@@ -113,15 +109,6 @@ def main():
 
     logging.info(f'Total white matter voxels: {white_matter_mask[..., min_slice:max_slice].sum()}')
     logging.info(f'Mean b0 value in white matter: {white_matter_b0_mean}')
-
-
-    ## PLOT SLICES
-
-    mid_slice = int((min_slice + max_slice) // 2)
-
-    plt.imshow(b0_images[..., mid_slice], cmap='gray')
-    plt.imshow(white_matter_mask[..., mid_slice], cmap='viridis', alpha=0.5)
-    plt.savefig(white_matter_paths.slice_plot_file)
 
 
 if __name__ == '__main__':
