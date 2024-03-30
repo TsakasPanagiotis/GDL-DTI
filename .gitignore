@@ -6,7 +6,7 @@ raw_data/*/data/
 phlippe uvadlc_notebooks DL2_Geometric_deep_learning
 QUVA-Lab escnn examples
 .vscode
-segmentations/
+*.nii.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
