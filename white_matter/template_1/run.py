@@ -1,9 +1,8 @@
-'''Load processed b0 images.
-Load white matter segmentation.
+'''Load b0 images and white matter segmentation.
 Apply white matter mask to b0 images.
-Calculate mean b0 value in masked white matter
-for selected slices.
-Save mean b0 value and plot of a masked slice.'''
+Calculate mean b0 value for selected slices.
+Save mean b0 value.'''
+
 
 import os
 import pickle
