@@ -221,9 +221,6 @@ def main():
         S0_corrections.append(S0_correction)
         valid_indices.append(row_index)
 
-        if len(d_tensors) == 1_000:
-            break
-
     d_tensors = np.stack(d_tensors, axis=0)
     S0_corrections = np.array(S0_corrections)
     valid_indices = np.array(valid_indices)

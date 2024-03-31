@@ -266,9 +266,6 @@ def main():
         S0_corrections.append(S0_correction)
         valid_indices.append(row_index)
 
-        if len(d_tensors) == 1_000:
-            break
-
     d_tensors = np.stack(d_tensors, axis=0)
     eig_vecs = np.stack(eig_vecs, axis=0)
     eig_vals = np.stack(eig_vals, axis=0)
