@@ -1,4 +1,7 @@
-''''''
+'''Load processed b-values and b-vectors.
+Load ground truth diffusion tensors.
+Load white matter b0 mean signal.
+Calculate and save noisy signals.'''
 
 
 import os
@@ -9,7 +12,6 @@ from datetime import datetime
 from dataclasses import dataclass
 from argparse import ArgumentParser
 
-import torch
 import numpy as np
 from tqdm import tqdm
 
@@ -59,6 +61,8 @@ class SimulationDataPaths:
         self.log_file = os.path.join(self.experiment_path, 'log.txt')
         self.paths_file = os.path.join(self.experiment_path, 'paths.pkl')
         self.hyperparameters_file = os.path.join(self.experiment_path, 'hparams.pkl')
+
+        self.simulation_data_file = os.path.join(self.experiment_path, 'data.npy')
 
 
 def main():
@@ -143,14 +147,13 @@ def main():
         segmentation_hparams: SegmentationHyperparameters = pickle.load(f)
     
 
+    ## PROCESSED DATA PATHS
+    
     if ground_truth_hparams.processed_data_paths_pkl \
         != segmentation_hparams.processed_data_paths_pkl:
         logging.error('Processed data paths do not match.')
         raise AssertionError('Processed data paths do not match.')
     
-
-    ## PROCESSED DATA PATHS
-
     with open(ground_truth_hparams.processed_data_paths_pkl, 'rb') as f:
         proc_data_paths: ProcessedDataPaths = pickle.load(f)
     
@@ -167,7 +170,26 @@ def main():
 
     ## SIMULATION DATA
 
+    noise_std = b0_mean / simulation_data_hparams.snr
+
+    logging.info(f'Noise standard deviation: {noise_std}')
+    logging.info('')
+
+    noisy_signals = []
+
+    for idx in tqdm(range(d_tensors.shape[0])):
+        d_tensor = d_tensors[idx]
+        signal = np.exp(- b_values * np.einsum('bi, ij, bj -> b', b_vectors, d_tensor, b_vectors))
+        noise = np.random.normal(loc=0.0, scale=noise_std, size=signal.shape)
+        noisy_signal = signal + noise
+        noisy_signal /= noisy_signal[b_values == 0.0].mean()
+        noisy_signals.append(noisy_signal)
     
+    noisy_signals = np.stack(noisy_signals)
+    
+    np.save(simulation_data_paths.simulation_data_file, noisy_signals)
+    
+    logging.info(f'noisy_signals: {noisy_signals.shape} - min: {noisy_signals.min()} - max: {noisy_signals.max()}')
 
 
 if __name__ == '__main__':
