@@ -1,0 +1,256 @@
+<mxfile host="65bd71144e">
+    <diagram id="uIHJJKto0LXYbZl0ostZ" name="Page-1">
+        <mxGraphModel dx="482" dy="1199" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="RAW DATA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="2040" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="mgh_1001" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="2160" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="PROCESSED DATA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1240" y="1880" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Basic processing of raw data.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Store b-values, b-vectors, median_otsu mask,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;processed data based on mask as 2D array&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;and b0 images.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1120" y="2000" width="400" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="38">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="41">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" edge="1" parent="1" source="6" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="6" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="2024-03-31_17-26-21" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1120" y="2240" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="DATA ANALYSIS" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="2680" y="-760" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values and data.&lt;/div&gt;&lt;div&gt;Analyze data per b-value and for all b-values combined:&lt;/div&gt;&lt;div&gt;min, max, num_zeros, num_neg, total.&lt;/div&gt;&lt;div&gt;Option to zero-mean b=0.0 images.&lt;/div&gt;&lt;div&gt;Save histograms.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="-640" width="400" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="2024-03-31_17-35-20&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;b_zero_mean: False&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="-400" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="2024-03-31_17-36-27&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;b_zero_mean: True&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="-280" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="GROUND TRUTH" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2680" y="200" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 5.2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="320" width="400" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="17" target="65">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="2024-03-31_20-16-26&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="600" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="18" target="60">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="18" target="67">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="2024-03-31_20-16-38&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="760" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 6.2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Use bounds to constraint the parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="920" width="400" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="20" target="70">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="2024-03-31_19-34-53&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="1200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="21" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="2024-03-31_19-35-19&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="1360" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 8&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the lower triangular matrix&amp;nbsp;&lt;/div&gt;&lt;div&gt;of the Cholesky decomposition of the diffusion tensor.&lt;/div&gt;&lt;div&gt;Option for bounds and S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save diffusion tensors, S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="1520" width="400" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="27" target="74">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="2024-03-31_19-37-33&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="1760" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="28" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="2024-03-31_19-38-54&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="1920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 9&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;To get angles predict (x,y) on unit circle and use atan2(y/x).&lt;/div&gt;&lt;div&gt;Note: y_angle should cover pi radians (use softplus).&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="2080" width="400" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="32" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="2024-03-31_19-59-49&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="2400" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="33" target="88">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="2024-04-01_00-35-44&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="2560" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 9.1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_cos, x_sin, y_cos, y_sin, z_cos, z_sin,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Put (cos,sin) on unit circle before using as sine and cosine.&lt;/div&gt;&lt;div&gt;Note: y_angle should cover pi radians (use softplus).&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="2720" width="400" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="38" target="78">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="2024-03-31_20-02-27&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="3040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="39" target="80">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="2024-03-31_20-02-42&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="3200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 10&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating matrix A that will be used to create&amp;nbsp;&lt;/div&gt;&lt;div&gt;the diffusion tensor as A.T @ A.&lt;/div&gt;&lt;div&gt;Option for bounds and S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save diffusion tensors, S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="3360" width="400" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="41" target="82">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="2024-03-31_18-29-49&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="3600" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="42" target="84">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="2024-03-31_19-01-43&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2560" y="3760" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="SEGMENTATION" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="2320" y="4440" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b0 images nii.gz.&lt;/div&gt;&lt;div&gt;Load white matter segmentation mask nii.gz.&lt;/div&gt;&lt;div&gt;Save them as numpy arrays.&lt;/div&gt;&lt;div&gt;Save an overlap plot of a slice and the mask.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2200" y="4560" width="400" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="50" target="55">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="2024-03-31_17-48-19" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2200" y="4760" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="WHITE MATTER" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="3020" y="4440" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load b0 images and white matter segmentation.&lt;/div&gt;&lt;div&gt;Apply white matter mask to b0 images.&lt;/div&gt;&lt;div&gt;Calculate mean b0 value for selected slices.&lt;/div&gt;&lt;div&gt;Save mean b0 value.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2900" y="4560" width="400" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="55" target="60">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="2024-03-31_17-53-47&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;slices: [45, 55]&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2900" y="4760" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 3&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Load ground truth diffusion tensors.&lt;/div&gt;&lt;div&gt;Load white matter b0 mean signal.&lt;/div&gt;&lt;div&gt;Calculate and save noisy signals.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="2880" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="2024-04-02_00-10-17&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;snr: 20.0&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="3040" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="SIMULATION DATA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3800" y="2760" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Load ground truth d-tensors, S0 corrections and valid indices.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Calculate mean and standard deviation for errors,&amp;nbsp;&lt;/div&gt;&lt;div&gt;mean errors per voxel, mean absolute errors per voxel,&amp;nbsp;&lt;/div&gt;&lt;div&gt;and root mean squared errors per voxel.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="200" width="400" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="2024-03-31_22-18-01" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="400" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="DATA ANALYSIS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3800" y="80" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="2024-03-31_22-18-11" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="520" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="2024-03-31_22-18-21" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="640" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="2024-03-31_22-18-31" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="760" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="2024-03-31_22-18-41" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="880" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="2024-03-31_22-18-50" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1000" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="2024-03-31_22-19-00" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1120" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="2024-03-31_22-19-10" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1240" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="2024-03-31_22-19-20" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1360" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="2024-03-31_22-19-30" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1480" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="2024-04-01_13-09-44" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1600" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="2024-04-01_13-10-10" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3680" y="1720" width="400" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
