@@ -1,3 +1,9 @@
+'''Load processed b0 images nii.gz.
+Load white matter segmentation mask nii.gz.
+Save them as numpy arrays.
+Save an overlap plot of a slice and the mask.'''
+
+
 import os
 import pickle
 import logging
