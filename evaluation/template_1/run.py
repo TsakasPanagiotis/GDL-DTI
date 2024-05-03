@@ -213,6 +213,21 @@ def main():
     pred_eigvecs = np.take_along_axis(pred_eigvecs, np.expand_dims(pred_sort_indices, axis=1), axis=2)
 
 
+    ## ONLY KEEP EIGENVALUES LOWER THAN THE THRESHOLD
+
+    valid_indices = pred_eigvals[:, 0] < ground_truth_hparams.threshold_eigval
+
+    logging.info(f'Number of invalid diffusion tensors: {np.sum(~valid_indices)} / {pred_d_tensors.shape[0]}')
+    logging.info(f'Percentage of invalid diffusion tensors: {np.sum(~valid_indices) / pred_d_tensors.shape[0] * 100:.2f}%')
+    logging.info('')
+
+    test_eigvals = test_eigvals[valid_indices]
+    test_eigvecs = test_eigvecs[valid_indices]
+
+    pred_eigvals = pred_eigvals[valid_indices]
+    pred_eigvecs = pred_eigvecs[valid_indices]
+
+
     ## MEAN DIFFUSIVITY
 
     # MD = (lambda_1 + lambda_2 + lambda_3) / 3
@@ -330,7 +345,6 @@ def main():
     # labels
     ax.set_xlabel('Ground Truth')
     ax.set_ylabel('Predictions')
-    #? ax.set_title('Mean Diffusivity')
 
     plt.tight_layout()
     plt.savefig(evaluation_paths.mean_diffusivity_parity_plot_file)
@@ -371,7 +385,6 @@ def main():
     # labels
     ax.set_xlabel('Ground Truth')
     ax.set_ylabel('Predictions')
-    #? ax.set_title('Fractional Anisotropy')
 
     plt.tight_layout()
     plt.savefig(evaluation_paths.fractional_anisotropy_parity_plot_file)
@@ -447,6 +460,7 @@ def main():
         axs[col].set_xlabel('mean')
         axs[col].set_ylabel('diff (pred - true)')
         axs[col].set_title(f'Eigenvalue {col+1}')
+        axs[col].set_ylim(-1, 1)
 
         # Create a new axes for the histogram, on the right of the current axes
         divider = make_axes_locatable(axs[col])
@@ -511,7 +525,7 @@ def main():
 
     ax.set_xlabel('mean')
     ax.set_ylabel('diff (pred - true)')
-    #? ax.set_title('Mean Diffusivity')
+    ax.set_ylim(-1, 1)
 
     # Create a new axes for the histogram, on the right of the current axes
     divider = make_axes_locatable(ax)
@@ -575,7 +589,7 @@ def main():
     
     ax.set_xlabel('mean')
     ax.set_ylabel('diff (pred - true)')
-    #? ax.set_title('Fractional Anisotropy')
+    ax.set_ylim(-1, 1)
 
     # Create a new axes for the histogram, on the right of the current axes
     divider = make_axes_locatable(ax)
