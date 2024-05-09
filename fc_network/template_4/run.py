@@ -156,7 +156,10 @@ class DiffusionNet(torch.nn.Module):
         d_params, S0 = output[:, :-1], output[:, -1]
         
         d_params = 10 * torch.tanh(d_params) # bounded in [-10, 10]
-        D = d_params.reshape(-1, 3, 3)
+        
+        A = d_params.reshape(-1, 3, 3)
+
+        D = torch.bmm(A.transpose(1, 2), A) # D = A.T @ A
 
         S0 = torch.tanh(S0).squeeze() + 1 # bounded in [0, 2]
 
