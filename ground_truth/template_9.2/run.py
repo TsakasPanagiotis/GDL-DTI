@@ -54,7 +54,7 @@ class GroundTruthPaths:
         self.valid_indices_file = os.path.join(self.experiment_path, 'valid.npy')
 
 
-def get_selection_mask(b_values_to_select_list: list[float], b_values: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+def get_selection_mask(b_values_to_select_list: list[float], b_values: np.ndarray) -> np.ndarray:
 
     b_values_to_select = set(b_values_to_select_list)
     unique_b_values = set(b_values)

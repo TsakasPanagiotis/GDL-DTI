@@ -29,6 +29,12 @@ from matplotlib.colors import LogNorm
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
+class PearsonResult:
+    def __init__(self, result) -> None:
+        self.statistic = result.statistic
+        self.pvalue = result.pvalue
+
+
 class GroundTruthHyperparameters(Protocol):
     threshold_eigval: float
 
@@ -246,21 +252,21 @@ def main():
 
     # Eigenvalues
     for col in range(3):
-        pearson_result = scipy.stats.pearsonr(test_eigvals[:, col], pred_eigvals[:, col])
+        pearson_result = PearsonResult(scipy.stats.pearsonr(test_eigvals[:, col], pred_eigvals[:, col]))
         logging.info(f'Eigenvalue {col+1} : ' + \
                      f'Pearson correlation coefficient = {pearson_result.statistic} ' + \
                      f'p-value = {pearson_result.pvalue}')
     logging.info('')
 
     # Mean Diffusivity
-    pearson_result = scipy.stats.pearsonr(test_md, pred_md)
+    pearson_result = PearsonResult(scipy.stats.pearsonr(test_md, pred_md))
     logging.info(f'Mean Diffusivity : ' + \
                  f'Pearson correlation coefficient = {pearson_result.statistic} ' + \
                  f'p-value = {pearson_result.pvalue}')
     logging.info('')
 
     # Fractional Anisotropy
-    pearson_result = scipy.stats.pearsonr(test_fa, pred_fa)
+    pearson_result = PearsonResult(scipy.stats.pearsonr(test_fa, pred_fa))
     logging.info(f'Fractional Anisotropy : ' + \
                  f'Pearson correlation coefficient = {pearson_result.statistic} ' + \
                  f'p-value = {pearson_result.pvalue}')
