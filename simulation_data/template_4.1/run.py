@@ -7,7 +7,7 @@ Sample SNRs for training and evaluation data.
 Save SNRs for training and evaluation data.
 Create noisy signals for training and evaluation data.
 Save noisy signals for training and evaluation data.
-FOr given test snrs, create and save noisy test signals.'''
+For given test snrs, create and save noisy test signals.'''
 
 
 import os
