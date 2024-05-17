@@ -50,8 +50,8 @@ class SimulationDataHyperparameters(Protocol):
 
 class SimulationDataPaths(Protocol):
     hyperparameters_file: str
-    simulation_train_data_file: str
-    simulation_eval_data_file: str
+    train_sim_data_file: str
+    eval_sim_data_file: str
 
 
 @dataclass
@@ -482,8 +482,8 @@ def main():
     b_values = np.load(proc_data_paths.b_values_file)
     b_vectors = np.load(proc_data_paths.b_vectors_file)
     
-    train_data = np.load(sim_data_paths.simulation_train_data_file)
-    eval_data = np.load(sim_data_paths.simulation_eval_data_file)
+    train_data = np.load(sim_data_paths.train_sim_data_file)
+    eval_data = np.load(sim_data_paths.eval_sim_data_file)
 
     selection_masks = get_selection_masks(equivariant_nn_hparams.b_values_to_select, b_values)
 
