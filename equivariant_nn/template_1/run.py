@@ -1,6 +1,9 @@
 '''Load simulation train and validation data.
 Load b-values and b-vectors from processed data.
-Create simple datasets and dataloaders.
+Convert signals to spherical harmonics irreps 
+for each of the selected b-values.
+Create simple datasets and dataloaders
+for the signals and their corresponding coefficients.
 Create an equivariant network for
 approximating matrix A that will be used 
 to create the diffusion tensor as A.T @ A
@@ -420,7 +423,7 @@ def main():
 
     ## DEVICE
 
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     logging.info(f'Using {device} device')
     logging.info('')
@@ -571,10 +574,10 @@ def main():
     ## DATASETS AND DATALOADERS
 
     train_dataset = DiffusionDataset(train_signals, train_coeffs)
-    val_dataset = DiffusionDataset(eval_signals, eval_coeffs)
+    eval_dataset = DiffusionDataset(eval_signals, eval_coeffs)
 
     logging.info(f'Train dataset: {len(train_dataset)}')
-    logging.info(f'Validation dataset: {len(val_dataset)}')
+    logging.info(f'Validation dataset: {len(eval_dataset)}')
     logging.info('')
 
     train_loader = DataLoader(
@@ -584,8 +587,8 @@ def main():
         generator=generator, 
         drop_last=True)
     
-    val_loader = DataLoader(
-        dataset=val_dataset, 
+    eval_loader = DataLoader(
+        dataset=eval_dataset, 
         batch_size=equivariant_nn_hparams.batch_size, 
         shuffle=False, 
         drop_last=True)
@@ -635,7 +638,7 @@ def main():
     for epoch in tqdm(range(last_epoch, last_epoch + equivariant_nn_hparams.num_epochs)):
 
         train_epoch_loss, train_time = train(train_loader, equivariant_net, loss_fn, optimizer, device, bvals, bvecs)
-        val_epoch_loss, val_time = validate(val_loader, equivariant_net, loss_fn, device, bvals, bvecs)
+        val_epoch_loss, val_time = validate(eval_loader, equivariant_net, loss_fn, device, bvals, bvecs)
 
         logging.info(f'Epoch: {epoch:2}/{last_epoch + equivariant_nn_hparams.num_epochs - 1:2} - ' + 
                      f'Train Loss: {train_epoch_loss:.8f} - ' +
@@ -685,8 +688,9 @@ def main():
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
+    plt.tight_layout()
     plt.savefig(equivariant_nn_paths.losses_plot_file)
-    plt.clf()
+    plt.close()
 
     logging.info('-' * 50)
     logging.info('')
