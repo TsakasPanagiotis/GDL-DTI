@@ -1,6 +1,9 @@
 '''Load simulation train and validation data.
 Load b-values and b-vectors from processed data.
-Create simple datasets and dataloaders.
+Convert signals to spherical harmonics irreps 
+for each of the selected b-values.
+Create simple datasets and dataloaders
+for the signals and their corresponding coefficients.
 Create an equivariant network for
 approximating three eigenvalues and two eigenvectors
 (the third eigenvector is the cross product of the first two)
@@ -50,8 +53,8 @@ class SimulationDataHyperparameters(Protocol):
 
 class SimulationDataPaths(Protocol):
     hyperparameters_file: str
-    simulation_train_data_file: str
-    simulation_eval_data_file: str
+    train_sim_data_file: str
+    eval_sim_data_file: str
 
 
 @dataclass
@@ -232,22 +235,24 @@ class EquivariantNet(torch.nn.Module):
         eigvals[:, 0, 0] = eigval_1.squeeze()
         eigvals[:, 1, 1] = eigval_2.squeeze()
         eigvals[:, 2, 2] = eigval_3.squeeze()
-        
-        # #? We make each eigenvector in eigvec_2 orthogonal 
-        # #? to the corresponding eigenvector in eigvec_1
-        # #? by subtracting the projection of eigvec_2 onto eigvec_1.
-        # ? eigvec_2 = eigvec_2 - ((eigvec_2 * eigvec_1).sum(dim=1, keepdim=True) / (eigvec_1 * eigvec_1).sum(dim=1, keepdim=True)) * eigvec_1
 
-        # We normalize the eigenvectors
-        eigvec_1 = eigvec_1 / eigvec_1.norm(dim=1, keepdim=True)
-        eigvec_2 = eigvec_2 / eigvec_2.norm(dim=1, keepdim=True)
+        eps = 1e-8
+        
+        # We make each eigenvector in eigvec_2 orthogonal 
+        # to the corresponding eigenvector in eigvec_1
+        # by subtracting the projection of eigvec_2 onto eigvec_1.
+        eigvec_2 = eigvec_2 - ((eigvec_2 * eigvec_1).sum(dim=1, keepdim=True) / ((eigvec_1 * eigvec_1).sum(dim=1, keepdim=True) + eps)) * eigvec_1
 
         # We create the third eigenvector by taking 
         # the cross product of the first two eigenvectors
         eigvec_3 = torch.cross(eigvec_1, eigvec_2, dim=1)
 
-        # We stack the eigenvectors to create the eigenvector matrix
-        # with shape (batch_size, 3, 3)
+        # We normalize the eigenvectors
+        eigvec_1 = eigvec_1 / (eigvec_1.norm(dim=1, keepdim=True) + eps)
+        eigvec_2 = eigvec_2 / (eigvec_2.norm(dim=1, keepdim=True) + eps)
+        eigvec_3 = eigvec_3 / (eigvec_3.norm(dim=1, keepdim=True) + eps)
+
+        # We stack the eigenvectors to create the eigenvector matrix with shape (batch_size, 3, 3)
         # The eigenvectors are the columns of the matrix
         # The eigenvectors are orthogonal and normalized
         eigvecs = torch.stack([eigvec_1, eigvec_2, eigvec_3], dim=2)
@@ -444,7 +449,7 @@ def main():
 
     ## DEVICE
 
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     logging.info(f'Using {device} device')
     logging.info('')
@@ -506,8 +511,8 @@ def main():
     b_values = np.load(proc_data_paths.b_values_file)
     b_vectors = np.load(proc_data_paths.b_vectors_file)
     
-    train_data = np.load(sim_data_paths.simulation_train_data_file)
-    eval_data = np.load(sim_data_paths.simulation_eval_data_file)
+    train_data = np.load(sim_data_paths.train_sim_data_file)
+    eval_data = np.load(sim_data_paths.eval_sim_data_file)
 
     selection_masks = get_selection_masks(equivariant_nn_hparams.b_values_to_select, b_values)
 
@@ -595,10 +600,10 @@ def main():
     ## DATASETS AND DATALOADERS
 
     train_dataset = DiffusionDataset(train_signals, train_coeffs)
-    val_dataset = DiffusionDataset(eval_signals, eval_coeffs)
+    eval_dataset = DiffusionDataset(eval_signals, eval_coeffs)
 
     logging.info(f'Train dataset: {len(train_dataset)}')
-    logging.info(f'Validation dataset: {len(val_dataset)}')
+    logging.info(f'Validation dataset: {len(eval_dataset)}')
     logging.info('')
 
     train_loader = DataLoader(
@@ -608,8 +613,8 @@ def main():
         generator=generator, 
         drop_last=True)
     
-    val_loader = DataLoader(
-        dataset=val_dataset, 
+    eval_loader = DataLoader(
+        dataset=eval_dataset, 
         batch_size=equivariant_nn_hparams.batch_size, 
         shuffle=False, 
         drop_last=True)
@@ -659,7 +664,7 @@ def main():
     for epoch in tqdm(range(last_epoch, last_epoch + equivariant_nn_hparams.num_epochs)):
 
         train_epoch_loss, train_time = train(train_loader, equivariant_net, loss_fn, optimizer, device, bvals, bvecs)
-        val_epoch_loss, val_time = validate(val_loader, equivariant_net, loss_fn, device, bvals, bvecs)
+        val_epoch_loss, val_time = validate(eval_loader, equivariant_net, loss_fn, device, bvals, bvecs)
 
         logging.info(f'Epoch: {epoch:2}/{last_epoch + equivariant_nn_hparams.num_epochs - 1:2} - ' + 
                      f'Train Loss: {train_epoch_loss:.8f} - ' +
@@ -709,8 +714,9 @@ def main():
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
+    plt.tight_layout()
     plt.savefig(equivariant_nn_paths.losses_plot_file)
-    plt.clf()
+    plt.close()
 
     logging.info('-' * 50)
     logging.info('')
