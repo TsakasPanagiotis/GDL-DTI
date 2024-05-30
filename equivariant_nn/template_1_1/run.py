@@ -75,7 +75,7 @@ class EquivariantNNHyperparameters:
 
 class EquivariantNNPaths:
     def __init__(self) -> None:
-        self.experiment_path = os.path.join('equivariant_nn', 'template_1.1', 'experiments', 
+        self.experiment_path = os.path.join('equivariant_nn', 'template_1_1', 'experiments', 
                                             datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
         self.log_file = os.path.join(self.experiment_path, 'log.txt')
         self.paths_file = os.path.join(self.experiment_path, 'paths.pkl')
