@@ -493,7 +493,7 @@ def main():
 
     ## DEVICE
 
-    device = torch.device('cpu' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     logging.info(f'Using {device} device')
     logging.info('')
