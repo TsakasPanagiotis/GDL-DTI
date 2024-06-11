@@ -204,7 +204,6 @@ class ReLUPlusEps(torch.nn.Module): # bound in (0, inf)
         return torch.relu(x) + 1e-6
 
 
-torch.nn.ReLU()
 class LastGatedLinear(torch.nn.Module):
 
     def __init__(self, in_irrep) -> None:
