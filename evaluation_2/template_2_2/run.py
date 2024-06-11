@@ -463,19 +463,34 @@ def main():
     pred_eigvecs_star = np.take_along_axis(pred_eigvecs_star, np.expand_dims(pred_sort_indices_star, axis=1), axis=2)
 
 
-    ## ONLY KEEP EIGENVALUES LOWER THAN THE THRESHOLD
+    ## ONLY KEEP VALID D TENSORS
 
-    # valid_indices = pred_eigvals[:, 0] < ground_truth_hparams.threshold_eigval
+    valid_indices = pred_eigvals[:, 0] <= test_eigvals[:,0].max()
 
-    # logging.info(f'Number of invalid diffusion tensors: {np.sum(~valid_indices)} / {pred_d_tensors.shape[0]}')
-    # logging.info(f'Percentage of invalid diffusion tensors: {np.sum(~valid_indices) / pred_d_tensors.shape[0] * 100:.2f}%')
-    # logging.info('')
+    logging.info(f'Number of invalid D tensors: {np.sum(~valid_indices)} / {pred_d_tensors.shape[0]}')
+    logging.info(f'Percentage of invalid D tensors: {np.sum(~valid_indices) / pred_d_tensors.shape[0] * 100:.2f}%')
+    logging.info('')
 
-    # test_eigvals = test_eigvals[valid_indices]
-    # test_eigvecs = test_eigvecs[valid_indices]
+    test_eigvals = test_eigvals[valid_indices]
+    test_eigvecs = test_eigvecs[valid_indices]
 
-    # pred_eigvals = pred_eigvals[valid_indices]
-    # pred_eigvecs = pred_eigvecs[valid_indices]
+    pred_eigvals = pred_eigvals[valid_indices]
+    pred_eigvecs = pred_eigvecs[valid_indices]
+
+
+    ## ONLY KEEP VALID D* TENSORS
+
+    valid_indices_star = pred_eigvals_star[:, 0] <= test_eigvals_star[:,0].max()
+
+    logging.info(f'Number of invalid D* tensors: {np.sum(~valid_indices_star)} / {pred_d_star_tensors.shape[0]}')
+    logging.info(f'Percentage of invalid D* tensors: {np.sum(~valid_indices_star) / pred_d_star_tensors.shape[0] * 100:.2f}%')
+    logging.info('')
+
+    test_eigvals_star = test_eigvals_star[valid_indices_star]
+    test_eigvecs_star = test_eigvecs_star[valid_indices_star]
+
+    pred_eigvals_star = pred_eigvals_star[valid_indices_star]
+    pred_eigvecs_star = pred_eigvecs_star[valid_indices_star]
 
 
     ## MEAN DIFFUSIVITY
