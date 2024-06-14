@@ -237,7 +237,7 @@ def save_eigenvalues_bland_altman_plot(test_eigvals, pred_eigvals, title, save_p
         )
 
         # add a colorbar for the scatter plot
-        # fig.colorbar(scatter, ax=axs[col], label='Density')
+        fig.colorbar(scatter, ax=axs[col], label='Density')
         
         diff_mean = diff.mean()
         diff_std = diff.std()

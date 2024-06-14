@@ -452,7 +452,7 @@ def main():
         )
 
         # add a colorbar for the scatter plot
-        # fig.colorbar(scatter, ax=axs[col], label='Density')
+        fig.colorbar(scatter, ax=axs[col], label='Density')
         
         diff_mean = diff.mean()
         diff_std = diff.std()
@@ -582,7 +582,7 @@ def main():
     )
 
     # add a colorbar for the scatter plot
-    # fig.colorbar(scatter, ax=ax, label='Density')
+    fig.colorbar(scatter, ax=ax, label='Density')
 
     diff_mean = diff.mean()
     diff_std = diff.std()
