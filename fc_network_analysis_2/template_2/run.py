@@ -1,4 +1,4 @@
-'''Connected to fc_network_2 template 1.
+'''Connected to fc_network_2 template 2.
 Load simulated b-values and b-vectors.
 Load simulated test data for given snr.
 Use signals from selected b-values that include zero.
