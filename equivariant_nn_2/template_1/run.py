@@ -7,8 +7,8 @@ Create simple datasets and dataloaders
 for the signals and their corresponding coefficients
 using only even frequencies.
 Create an equivariant network for
-approximating matrix f-values, S0_correction,
-D = A.T @ A and D* = A*.T @ A* based on irreducible tensors.
+approximating f-values, S0_correction,
+D and D* based on irreducible tensors.
 MSE loss and AdamW optimizer.
 Option to resume training from a checkpoint.
 Epoch loop with basic train and validation steps.
