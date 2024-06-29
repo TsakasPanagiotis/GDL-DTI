@@ -1,23 +1,23 @@
 <mxfile host="65bd71144e">
     <diagram id="uIHJJKto0LXYbZl0ostZ" name="Page-1">
-        <mxGraphModel dx="10127" dy="6090" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="13250" dy="9560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="RAW DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="400" y="2040" width="160" height="80" as="geometry"/>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;RAW DATA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="2020" width="240" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="3" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="mgh_1001" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="280" y="2160" width="400" height="80" as="geometry"/>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;mgh_1001&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="2140" width="400" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="PROCESSED DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1240" y="1880" width="160" height="80" as="geometry"/>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;PROCESSED DATA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1510" y="1880" width="240" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Basic processing of raw data.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Store b-values, b-vectors, median_otsu mask,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;processed data based on mask as 2D array&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;and b0 images.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1120" y="2000" width="400" height="200" as="geometry"/>
+                <mxCell id="5" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1430" y="2000" width="400" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -25,478 +25,653 @@
                 <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="17" edge="1">
+                <mxCell id="201" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;curved=1;" parent="1" source="6" target="187" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="18" edge="1">
+                <mxCell id="202" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="6" target="190" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="20" edge="1">
+                <mxCell id="203" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="6" target="192" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="21" edge="1">
+                <mxCell id="204" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="6" target="194" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="27" edge="1">
+                <mxCell id="205" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="6" target="196" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="28" edge="1">
+                <mxCell id="206" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="6" target="198" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="32" edge="1">
+                <mxCell id="207" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="6" target="200" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="33" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="6" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;2024-03-31_17-26-21&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1430" y="2120" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="38" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;DATA ANALYSIS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="2640" y="600" width="240" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="39" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="10" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="720" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="41" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;2024-03-31_17-35-20&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;b_zero_mean: False&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="840" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;curved=1;" parent="1" source="6" target="42" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="6" target="50" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="98" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="6" target="96" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="99" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6" target="97" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="6" value="2024-03-31_17-26-21" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1120" y="2240" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="DATA ANALYSIS" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
-                    <mxGeometry x="2680" y="-760" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="10" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values and data.&lt;/div&gt;&lt;div&gt;Analyze data per b-value and for all b-values combined:&lt;/div&gt;&lt;div&gt;min, max, num_zeros, num_neg, total.&lt;/div&gt;&lt;div&gt;Option to zero-mean b=0.0 images.&lt;/div&gt;&lt;div&gt;Save histograms.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="-640" width="400" height="200" as="geometry"/>
-                </mxCell>
-                <mxCell id="11" value="2024-03-31_17-35-20&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;b_zero_mean: False&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="-400" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="12" value="2024-03-31_17-36-27&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;b_zero_mean: True&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="-280" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="15" value="GROUND TRUTH" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2680" y="400" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="16" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 5.2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="520" width="400" height="240" as="geometry"/>
-                </mxCell>
-                <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="17" target="65" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="17" value="2024-03-31_20-16-26&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="800" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="18" target="67" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="18" value="2024-03-31_20-16-38&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;2024-03-31_17-36-27&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;b_zero_mean: True&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2560" y="960" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 6.2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Use bounds to constraint the parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="1120" width="400" height="240" as="geometry"/>
+                <mxCell id="15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;GROUND TRUTH&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2640" y="1240" width="240" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="71" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="20" target="70" edge="1">
+                <mxCell id="16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 2.3&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Lower Triangular&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="1360" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="227" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="187" target="210" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="2024-03-31_19-34-53&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="1400" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="73" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="21" target="72" edge="1">
+                <mxCell id="230" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="187" target="229" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="2024-03-31_19-35-19&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="1560" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="26" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 8&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the lower triangular matrix&amp;nbsp;&lt;/div&gt;&lt;div&gt;of the Cholesky decomposition of the diffusion tensor.&lt;/div&gt;&lt;div&gt;Option for bounds and S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save diffusion tensors, S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="1720" width="400" height="200" as="geometry"/>
-                </mxCell>
-                <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="27" target="74" edge="1">
+                <mxCell id="232" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="187" target="214" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="2024-03-31_19-37-33&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="1960" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="77" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="28" target="76" edge="1">
+                <mxCell id="233" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="187" target="231" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="2024-03-31_19-38-54&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="2120" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="31" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 9&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;To get angles predict (x,y) on unit circle and use atan2(y/x).&lt;/div&gt;&lt;div&gt;Note: y_angle should cover pi radians (use softplus).&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="2280" width="400" height="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="87" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="32" target="86" edge="1">
+                <mxCell id="234" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="187" target="218" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="2024-03-31_19-59-49&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="187" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_23-31-54&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="1480" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 5.3&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Angles and Eigenvalues with Sigmoid&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="1640" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_17-03-25&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="1760" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 6.3&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Angles and Eigenvalues with Bounds&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="1920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="192" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_17-35-19&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="2040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 8.1&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Cholesky&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="2200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_17-09-56&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="2320" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 9.2&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Sines and Cosines of Angles and Eigenvalues&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="2480" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_17-11-32&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2560" y="2600" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="33" target="88" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="33" value="2024-04-01_00-35-44&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="197" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 10.1&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Full Rank&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2560" y="2760" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 9.1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_cos, x_sin, y_cos, y_sin, z_cos, z_sin,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Put (cos,sin) on unit circle before using as sine and cosine.&lt;/div&gt;&lt;div&gt;Note: y_angle should cover pi radians (use softplus).&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="2920" width="400" height="280" as="geometry"/>
+                <mxCell id="198" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_17-11-43&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="2880" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="38" target="78" edge="1">
+                <mxCell id="199" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 11.1&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;br&gt;Quaternion&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="3040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="200" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-16_17-11-52&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2560" y="3160" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="208" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SIMULATION DATA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="3720" y="-360" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="209" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 4&lt;br&gt;&lt;br&gt;Without test data&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3640" y="-240" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="240" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="210" target="237" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="2024-03-31_20-02-27&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="3240" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="39" target="80" edge="1">
+                <mxCell id="247" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="210" target="244" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="2024-03-31_20-02-42&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="3400" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="40" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 10&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating matrix A that will be used to create&amp;nbsp;&lt;/div&gt;&lt;div&gt;the diffusion tensor as A.T @ A.&lt;/div&gt;&lt;div&gt;Option for bounds and S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save diffusion tensors, S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="3560" width="400" height="200" as="geometry"/>
-                </mxCell>
-                <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="41" target="82" edge="1">
+                <mxCell id="249" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="210" target="246" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="2024-03-31_18-29-49&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="3800" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="42" target="84" edge="1">
+                <mxCell id="255" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="210" target="252" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="94" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="90" edge="1">
+                <mxCell id="210" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-18_22-50-02&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3640" y="-120" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="212" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SIMULATION DATA 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3760" y="3440" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="213" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;br&gt;f* uniform&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3680" y="3560" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="293" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="214" target="289" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="150" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="149" edge="1">
+                <mxCell id="302" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="214" target="298" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="42" value="2024-03-31_19-01-43&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="3960" width="400" height="120" as="geometry"/>
+                <mxCell id="214" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-23_13-11-24&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;font size=&quot;3&quot;&gt;f_max = 0.3&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3680" y="3680" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="SEGMENTATION" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
-                    <mxGeometry x="2320" y="5160" width="160" height="80" as="geometry"/>
+                <mxCell id="217" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 2&lt;br&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;f* beta&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3680" y="3960" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b0 images nii.gz.&lt;/div&gt;&lt;div&gt;Load white matter segmentation mask nii.gz.&lt;/div&gt;&lt;div&gt;Save them as numpy arrays.&lt;/div&gt;&lt;div&gt;Save an overlap plot of a slice and the mask.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2200" y="5280" width="400" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;" parent="1" source="50" target="55" edge="1">
+                <mxCell id="295" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="218" target="291" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="2024-03-31_17-48-19" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2200" y="5480" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="53" value="WHITE MATTER" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
-                    <mxGeometry x="3020" y="5160" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="54" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load b0 images and white matter segmentation.&lt;/div&gt;&lt;div&gt;Apply white matter mask to b0 images.&lt;/div&gt;&lt;div&gt;Calculate mean b0 value for selected slices.&lt;/div&gt;&lt;div&gt;Save mean b0 value.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2900" y="5280" width="400" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="93" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="55" target="90" edge="1">
+                <mxCell id="304" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="218" target="300" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="151" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="55" target="149" edge="1">
+                <mxCell id="307" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="218" target="306" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" value="2024-03-31_17-53-47&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;slices: [45, 55]&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2900" y="5480" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="59" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 3&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Load ground truth diffusion tensors.&lt;/div&gt;&lt;div&gt;Load white matter b0 mean signal.&lt;/div&gt;&lt;div&gt;Calculate and save noisy signals.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="2880" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="61" value="SIMULATION DATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3800" y="2760" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="64" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Load ground truth d-tensors, S0 corrections and valid indices.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Calculate mean and standard deviation for errors,&amp;nbsp;&lt;/div&gt;&lt;div&gt;mean errors per voxel, mean absolute errors per voxel,&amp;nbsp;&lt;/div&gt;&lt;div&gt;and root mean squared errors per voxel.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="200" width="400" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="65" value="2024-03-31_22-18-01" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="400" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="66" value="DATA ANALYSIS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3800" y="80" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="67" value="2024-03-31_22-18-11" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="520" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="70" value="2024-03-31_22-18-21" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="640" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="72" value="2024-03-31_22-18-31" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="760" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="74" value="2024-03-31_22-18-41" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="880" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="76" value="2024-03-31_22-18-50" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1000" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="78" value="2024-03-31_22-19-00" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1120" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="80" value="2024-03-31_22-19-10" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1240" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="82" value="2024-03-31_22-19-20" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1360" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="84" value="2024-03-31_22-19-30" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1480" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="86" value="2024-04-01_13-09-44" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1600" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="88" value="2024-04-01_13-10-10" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1720" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="126" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="90" target="107" edge="1">
+                <mxCell id="317" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="218" target="310" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="127" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="109" edge="1">
+                <mxCell id="318" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="218" target="316" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="128" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="112" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="129" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="90" target="116" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="130" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="118" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="131" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="121" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="132" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="124" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="90" value="2024-04-02_15-09-51&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;snr: 20.0&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="3040" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="95" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 11&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values, b-vectors and data.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;rotation matrix through quaternion representation,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Quaternion q = a + bi + cj + dk is unit length.&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Option for S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="4120" width="400" height="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="96" target="100" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="96" value="2024-04-03_10-24-43&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: False&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="4440" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="103" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="97" target="101" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="97" value="2024-04-03_10-25-44&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S0_correction: True&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="2560" y="4600" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="100" value="2024-04-03_12-38-28" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1840" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="101" value="2024-04-03_12-39-06" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="1960" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="104" value="BASELINE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4880" y="-680" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="105" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 3&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 5.2.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the parameters.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="-560" width="400" height="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="142" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="107" target="134" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="107" value="2024-04-03_16-55-09&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="-240" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="108" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 4&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 6.2.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Use bounds to constraint the parameters.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="80" width="400" height="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="143" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="109" target="136" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="109" value="2024-04-03_17-13-11&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="400" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="111" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 5&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 8.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the lower triangular matrix&amp;nbsp;&lt;/div&gt;&lt;div&gt;of the Cholesky decomposition of the diffusion tensor.&lt;/div&gt;&lt;div&gt;Option for bounds.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save diffusion tensors, S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="720" width="400" height="240" as="geometry"/>
-                </mxCell>
-                <mxCell id="144" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="112" target="137" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="112" value="2024-04-03_17-25-27&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="1000" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="114" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 6&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 9.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_angle, y_angle, z_angle,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;To get angles predict (x,y) on unit circle and use atan2(y/x).&lt;/div&gt;&lt;div&gt;Note: y_angle should cover pi radians (use softplus).&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="1320" width="400" height="320" as="geometry"/>
-                </mxCell>
-                <mxCell id="145" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="116" target="138" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="116" value="2024-04-04_00-06-37&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="1680" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="117" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 7&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 9.1&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;x_cos, x_sin, y_cos, y_sin, z_cos, z_sin,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Put (cos,sin) on unit circle before using as sine and cosine.&lt;/div&gt;&lt;div&gt;Note: y_angle should cover pi radians (use softplus).&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="2000" width="400" height="320" as="geometry"/>
-                </mxCell>
-                <mxCell id="146" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="118" target="139" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="118" value="2024-04-04_00-06-58&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="2360" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="120" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 8&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 10.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating matrix A that will be used to create&amp;nbsp;&lt;/div&gt;&lt;div&gt;the diffusion tensor as A.T @ A.&lt;/div&gt;&lt;div&gt;Option for bounds.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save diffusion tensors, S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="2675" width="400" height="245" as="geometry"/>
-                </mxCell>
-                <mxCell id="147" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="121" target="140" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="121" value="2024-04-04_00-07-13&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="2955" width="400" height="125" as="geometry"/>
-                </mxCell>
-                <mxCell id="123" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 9&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Based on ground truth template 11.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Get scipy nonlinear linear least squares results&lt;/div&gt;&lt;div&gt;by approximating the spectral composition parameters:&lt;/div&gt;&lt;div&gt;rotation matrix through quaternion representation,&lt;/div&gt;&lt;div&gt;eigval_1, eigval_2_over_1, eigval_3_over_2.&lt;/div&gt;&lt;div&gt;Quaternion q = a + bi + cj + dk is unit length.&lt;/div&gt;&lt;div&gt;Use sigmoid to constraint the eigenvalue parameters.&lt;/div&gt;&lt;div&gt;Use S0_correction.&lt;/div&gt;&lt;div&gt;Only keep symmetric positive definite tensors&amp;nbsp;&lt;/div&gt;&lt;div&gt;with eigenvalues below a threshold.&lt;/div&gt;&lt;div&gt;Save&amp;nbsp; diffusion tensors, eigenvectors, eigenvalues,&lt;/div&gt;&lt;div&gt;S0_corrections and valid indices.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="3280" width="400" height="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="148" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="124" target="141" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="124" value="2024-04-04_00-07-35&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="3600" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="133" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load processed b-values and b-vectors.&lt;/div&gt;&lt;div&gt;Load simulated data.&lt;/div&gt;&lt;div&gt;Load baseline d-tensors, S0 corrections and valid indices.&lt;/div&gt;&lt;div&gt;Use signals from selected b-values.&lt;/div&gt;&lt;div&gt;Calculate mean and standard deviation for errors,&amp;nbsp;&lt;/div&gt;&lt;div&gt;mean errors per voxel, mean absolute errors per voxel,&amp;nbsp;&lt;/div&gt;&lt;div&gt;and root mean squared errors per voxel.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="320" width="400" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="134" value="2024-04-04_12-33-05" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="520" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="135" value="BASELINE ANALYSIS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="6000" y="200" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="136" value="2024-04-04_12-36-21" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="640" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="137" value="2024-04-04_12-36-33" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="760" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="138" value="2024-04-04_12-36-43" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="880" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="139" value="2024-04-04_12-36-54" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1000" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="140" value="2024-04-04_12-37-06" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1120" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="141" value="2024-04-04_12-37-16" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1240" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="159" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="152" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="160" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="153" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="162" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="154" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="163" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="155" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="164" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="156" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="165" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="157" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="166" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="149" target="158" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="186" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="149" target="183">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="149" value="2024-04-04_13-36-41&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;snr: 40.0&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="3160" width="400" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="174" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="152" target="167" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="152" value="2024-04-04_13-40-09&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="-80" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="175" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="153" target="168" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="153" value="2024-04-04_13-40-23&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="560" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="176" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="154" target="169" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="154" value="2024-04-04_13-40-40&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="1160" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="177" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="155" target="170" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="155" value="2024-04-04_13-40-51&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="1840" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="178" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="156" target="171" edge="1">
+                <mxCell id="319" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="218" target="312" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="5720" y="2050" as="targetPoint"/>
+                        <mxPoint x="4690" y="5256.666666666667" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="156" value="2024-04-04_13-41-08&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="2520" width="400" height="120" as="geometry"/>
+                <mxCell id="320" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="218" target="315" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="4600" y="5430" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="179" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="157" target="172" edge="1">
+                <mxCell id="218" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-07_19-03-37&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3680" y="4080" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 4.1&lt;br&gt;&lt;br&gt;With test data&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3640" y="40" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="241" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="229" target="239" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="157" value="2024-04-04_13-41-25&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;div&gt;bounds: [-10, 10]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="3115" width="400" height="125" as="geometry"/>
-                </mxCell>
-                <mxCell id="180" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="158" target="173" edge="1">
+                <mxCell id="263" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="229" target="258" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="158" value="2024-04-04_13-41-37&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="3760" width="400" height="120" as="geometry"/>
+                <mxCell id="264" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="229" target="260" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="4490" y="2057.1428571428573" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="167" value="2024-04-04_16-03-06" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1360" width="400" height="80" as="geometry"/>
+                <mxCell id="265" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="229" target="262" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="4580" y="2350.9523809523807" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="168" value="2024-04-04_16-03-16" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1480" width="400" height="80" as="geometry"/>
+                <mxCell id="229" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-14_14-13-54&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3640" y="160" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="169" value="2024-04-04_16-03-27" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1600" width="400" height="80" as="geometry"/>
+                <mxCell id="294" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="231" target="292" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="170" value="2024-04-04_16-03-38" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1720" width="400" height="80" as="geometry"/>
+                <mxCell id="303" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="231" target="301" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="2024-04-04_18-35-55" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="2080" width="400" height="80" as="geometry"/>
+                <mxCell id="231" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-23_16-15-33 &lt;br&gt;&lt;br&gt;f_max=0.7&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3680" y="3800" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="172" value="2024-04-04_16-03-48" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1840" width="400" height="80" as="geometry"/>
+                <mxCell id="235" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;BASELINE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="-1520" width="240" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="173" value="2024-04-04_16-03-59" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="5880" y="1960" width="400" height="80" as="geometry"/>
+                <mxCell id="236" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 8.1&lt;br&gt;&lt;br&gt;Full Rank after creating test data&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-1400" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="181" value="FC NETWORK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="4880" y="4400" width="160" height="80" as="geometry"/>
+                <mxCell id="362" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="237" target="353" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="6800" y="-340" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="6600" y="-1220"/>
+                            <mxPoint x="6600" y="-100"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="182" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TEMPLATE 1.2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Load simulation data.&lt;/div&gt;&lt;div&gt;Load b-values and b-vectors from processed data.&lt;/div&gt;&lt;div&gt;Create simple datasets and dataloaders.&lt;/div&gt;&lt;div&gt;Create a fully connected network&amp;nbsp;&lt;/div&gt;&lt;div&gt;based on ground truth template 5.2:&lt;/div&gt;&lt;div&gt;angle and eigenvalue parameters with sigmoid&lt;/div&gt;&lt;div&gt;and S0 correction with tanh.&lt;/div&gt;&lt;div&gt;MSE loss and AdamW optimizer.&lt;/div&gt;&lt;div&gt;Option to resume training from a checkpoint.&lt;/div&gt;&lt;div&gt;Epoch loop with basic train and validation steps.&lt;/div&gt;&lt;div&gt;Save best and last checkpoints and losses plot.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="4760" y="4520" width="400" height="240" as="geometry"/>
+                <mxCell id="237" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-30_00-17-38&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-1280" width="400" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="183" value="2024-04-09_15-18-23&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;seed: 0&lt;/div&gt;&lt;div&gt;hidden_sizes: [64, 64]&lt;/div&gt;&lt;div&gt;num_epochs: 40&lt;/div&gt;&lt;div&gt;learning_rate: 0.01&lt;/div&gt;&lt;div&gt;batch_size: 128&lt;/div&gt;&lt;div&gt;train_percent: 0.8&lt;/div&gt;&lt;div&gt;threshold_eigval: 3.5&lt;/div&gt;&lt;div&gt;b_values_to_select: [1.0]&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="4760" y="4800" width="400" height="200" as="geometry"/>
+                <mxCell id="238" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 8.2&lt;br&gt;&lt;br&gt;Full rank after loading test data&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-1120" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="363" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="239" target="361" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="6730" y="-40" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="6570" y="-940"/>
+                            <mxPoint x="6570" y="20"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="239" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-14_14-36-39&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-1000" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="242" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;FC NETWORK&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="-680" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="243" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 4&lt;br&gt;&lt;br&gt;Full rank&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-560" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="274" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="244" target="268" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="244" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-06_23-46-36&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-440" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="245" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 4.1&lt;br&gt;&lt;br&gt;Full rank for multiples of 100 epochs&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-280" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="276" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="246" target="273" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="246" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-06_23-40-27&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="-160" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="250" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SUPERVISED FC NN&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="170" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="251" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="290" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="275" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="252" target="270" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="252" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_16-33-38&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="410" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="256" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EQUIVARIANT NN&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="680" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;br&gt;&lt;br&gt;Full Rank&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="800" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="286" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="258" target="279" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="258" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-31_18-43-43&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1.1&lt;br&gt;&lt;br&gt;Eigenvalues and Eigenvectors&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="1080" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="285" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="260" target="281" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="260" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-30_19-00-51&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="1200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="261" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 4&lt;br&gt;&lt;br&gt;Irreps&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="1360" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="284" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="262" target="283" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="262" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-07_17-12-25&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="1480" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="266" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;FC NETWORK ANALYSIS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="5960" y="-680" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 3&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="-560" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="360" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="268" target="351" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="268" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_12-25-35&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="-440" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="269" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 3.1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="-280" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="364" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="270" target="355" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="270" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_20-03-33&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="-160" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="271" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 3.2&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="366" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="273" target="365" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="273" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_13-32-55&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="120" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="277" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EQUIVARIANT NN ANALYSIS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="5920" y="680" width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="278" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="800" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="369" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="279" target="359" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="279" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-31_19-43-37&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="280" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 2&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="1080" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="370" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="281" target="367" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="281" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-30_19-47-46&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="1200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="282" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 3&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="1360" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="371" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="283" target="368" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="283" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-07_18-23-01&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="1480" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="287" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;BASELINE 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="2320" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1 &lt;br&gt;&lt;br&gt;Full Rank&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="2440" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="390" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="289" target="376" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="6850" y="3960" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="6620" y="2620"/>
+                            <mxPoint x="6620" y="3980"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="289" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_13-29-01&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="2560" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="290" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 2 &lt;br&gt;&lt;br&gt;Full Rank&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="2840" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="394" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="291" target="383" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="6590" y="4570" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="5160" y="3030"/>
+                            <mxPoint x="6470" y="3030"/>
+                            <mxPoint x="6470" y="4780"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="291" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-07_19-27-59&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="2960" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="391" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="292" target="382" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="6430" y="3380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="6550" y="2740"/>
+                            <mxPoint x="6550" y="4100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="292" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_13-30-01&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="2680" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="296" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;FC NETWORK 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="3280" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="297" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1 &lt;br&gt;&lt;br&gt;Full Rank&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="3400" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="329" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="298" target="323" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="298" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_18-35-03&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="3520" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="299" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 2 &lt;br&gt;&lt;br&gt;Full Rank&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="3800" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="331" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="300" target="325" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="300" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-07_19-22-02&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="3920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="330" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="301" target="326" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="301" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_18-39-04&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="3640" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="305" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 3&lt;br&gt;&lt;br&gt;Irreps&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="4080" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="332" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="306" target="328" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="306" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-28_15-10-12&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="4200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="308" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EQUIVARIANT NN 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4840" y="4520" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="309" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1 &lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;Simple Irreps&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="4640" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="310" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-08_16-01-00 &lt;br&gt;&lt;br&gt;2 channels - 2 layers&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="4760" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="311" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1.1&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;Irreps with trace factor&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="5040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="344" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="312" target="337" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="312" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-13_16-24-19&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="5160" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="314" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1.2&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;Irreps with regularization&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="5320" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="347" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="315" target="342" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="348" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="315" target="346" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="315" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_20-12-10&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="5440" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="343" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="316" target="340" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="345" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="316" target="339" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="316" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-08_17-04-50 &lt;br&gt;&lt;br&gt;4 channels - 4 layers&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="4880" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="321" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;FC NETWORK ANALYSIS 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="3280" width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="322" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="3400" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="388" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="323" target="374" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="323" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_19-47-03&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="3520" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="324" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 2&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="3800" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="392" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="325" target="378" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="325" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-07_22-39-00&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="3920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="389" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="326" target="386" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="326" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_19-48-03&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="3640" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="327" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 3&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="4080" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="393" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="328" target="387" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="328" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-28_15-54-11&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="4200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="333" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EQUIVARIANT NN ANALYSIS 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5880" y="4520" width="320" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="334" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="4640" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="336" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1.1&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="4920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="398" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="337" target="384" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="337" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-13_19-48-26&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="5040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="338" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1.2&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;br&gt;If statement&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="5200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="399" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="339" target="385" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="339" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-14-59&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="5320" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="395" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="340" target="381" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="340" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-09_16-25-59&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="4760" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="341" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;TEMPLATE 1.3&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="5480" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="400" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="342" target="396" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="342" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_23-19-20&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="5600" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="401" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="346" target="397" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="346" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-15_12-57-36&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="5840" y="5720" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="349" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EVALUATION&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="7040" y="-680" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="350" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="-560" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="351" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_12-30-47&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="-440" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="352" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1.1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="-280" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="353" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-04-30_00-23-38&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="-160" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="354" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1.2&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="120" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="355" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_20-15-19&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="240" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="356" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1.3&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="400" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="358" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1.4&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="680" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="359" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-31_19-44-28&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="800" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="361" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-14_14-44-05&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="-40" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="365" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-07_13-36-25&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="520" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="367" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-46-40&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="368" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-53-25&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="1040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="372" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;EVALUATION 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="7040" y="3280" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="373" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="3400" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="374" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_19-54-03&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="3520" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="375" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 1.1&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="3800" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="376" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_15-15-02&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="3920" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="377" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 2&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4200" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="378" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-32-14&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4320" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="379" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 2.2&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4600" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="380" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TEMPLATE 2.3&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4880" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="381" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-37-51&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="5000" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="382" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_15-15-22&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4040" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="383" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-34-59&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4720" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="384" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-40-04&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="5120" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="385" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_13-41-44&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="5240" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="386" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-05-24_19-54-24&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="3640" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="387" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-28_15-55-03&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="4440" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="396" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-14_23-22-33&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="5360" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="397" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;2024-06-15_12-59-00&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="6960" y="5480" width="400" height="120" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
