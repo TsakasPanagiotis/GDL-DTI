@@ -1,7 +1,6 @@
 '''Connected to equivariant_nn template 4.
 Load simulated test data.
 Load processed b-values and b-vectors.
-Create noisy test signals for given snr.
 Use signals from selected b-values that include zero.
 Pass through the best model.
 Save diffusion tensors and S0_corrections.
@@ -155,7 +154,7 @@ def main():
 
     ## DEVICE
 
-    device = 'cpu' # 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     
     logging.info(f'Using {device} device')
     logging.info('')
@@ -182,13 +181,13 @@ def main():
     generator = torch.Generator().manual_seed(equivariant_nn_analysis_hparams.seed)
     
 
-    ## FC NETWORK PATHS
+    ## EQUIVARIANT NN PATHS
 
     with open(equivariant_nn_analysis_hparams.equivariant_nn_paths_pkl, 'rb') as f:
         equivariant_nn_paths: EquivariantNNPaths = pickle.load(f)
     
 
-    ## FC NETWORK HYPERPARAMETERS
+    ## EQUIVARIANT NN HYPERPARAMETERS
 
     with open(equivariant_nn_paths.hyperparameters_file, 'rb') as f:
         equivariant_nn_hparams: EquivariantNNHyperparameters = pickle.load(f)
