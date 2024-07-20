@@ -1,8 +1,0 @@
-Representation,# Parameters,# Invalid,MAE per voxel,RMSE per voxel
-Lower Triangular Part,6,8337,0.04511 ± 0.03317,0.05828 ± 0.04528
-Cholesky Decomposition,6,6583,0.05222 ± 0.84861,0.06759 ± 1.16127
-Full Rank Matrix,9,1362,0.05092 ± 0.84213,0.06587 ± 1.15241
-Angles and Eigenvalues with Sigmoid,6,254,0.06218 ± 4.24809,0.07981 ± 5.15612
-Angles and Eigenvalues with Bounds,6,2035,0.06398 ± 4.25905,0.08204 ± 5.16941
-Sines and Cosines of Angles and Eigenvalues,9,36,0.06178 ± 4.24675,0.07932 ± 5.15450
-Quaternion and Eigenvalues,7,77,0.06168 ± 4.24700,0.07921 ± 5.15480
