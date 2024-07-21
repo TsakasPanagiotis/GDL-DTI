@@ -59,7 +59,7 @@ DTI : $\quad \quad \quad  S(b, g_k) = S0 \cdot \exp(-b \cdot g_k^T \cdot \bar{D}
 
 IVIM-DTI : $\quad  S(b, g_k) = S0 \cdot \Bigr[ f^* \cdot \exp(-b \cdot g_k^T \cdot \bar{D}^* \cdot g_k) + (1 - f^*) \cdot \exp(-b \cdot g_k^T \cdot \bar{D} \cdot g_k) \Bigl]$
 
-$S0$ is the baseline signal, $b$ is the b-value, $g_k$ is the diffusion direction vector, $f^{*}$ is the perfusion fraction, $\bar{D}$ is the 3x3 diffusion tensor, and $\bar{D}^{*}$ is the pseudo-diffusion tensor.
+$S0$ is the baseline signal, $b$ is the b-value, $g_k$ is the diffusion direction vector, $f^{\star}$ is the perfusion fraction, $\bar{D}$ is the 3x3 diffusion tensor, and $\bar{D}^{\star}$ is the pseudo-diffusion tensor.
 
 ## Pipeline
 
