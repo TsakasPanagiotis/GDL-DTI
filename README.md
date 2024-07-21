@@ -12,42 +12,36 @@ Our findings indicate that the fully connected network estimated diffusion param
 
 ## Overview
 
-<style type="text/css">
-table{border-collapse:collapse;}
-td, th{text-align:center;vertical-align:center;}
-.bold{font-weight:bold;}
-</style>
-
-<table>
+<table border-collapse="collapse">
 <tbody>
   <tr>
-    <td class="bold" rowspan="3">Physics Equation</td>
-    <td class="bold" colspan="5">Model</td>
+    <td style="text-align:center;vertical-align:center;font-weight:bold;" rowspan="3">Physics Equation</td>
+    <td style="text-align:center;vertical-align:center;font-weight:bold;" colspan="5">Model</td>
   </tr>
   <tr>
-    <td class="bold" rowspan="2">Non-linear Least Squares</td>
-    <td class="bold" colspan="3">Fully Connected</td>
-    <td class="bold" rowspan="2">Equivariant</td>
+    <td style="text-align:center;vertical-align:center;font-weight:bold;" rowspan="2">Non-linear Least Squares</td>
+    <td style="text-align:center;vertical-align:center;font-weight:bold;" colspan="3">Fully Connected</td>
+    <td style="text-align:center;vertical-align:center;font-weight:bold;" rowspan="2">Equivariant</td>
   </tr>
   <tr>
-    <td colspan="2">self-supervised</td>
-    <td>supervised</td>
+    <td style="text-align:center;vertical-align:center;" colspan="2">self-supervised</td>
+    <td style="text-align:center;vertical-align:center;">supervised</td>
   </tr>
   <tr>
-    <td>DTI</td>
-    <td>Full Rank</td>
-    <td>Full Rank</td>
-    <td>-</td>
-    <td>Full Rank</td>
-    <td>Irreps</td>
+    <td style="text-align:center;vertical-align:center;">DTI</td>
+    <td style="text-align:center;vertical-align:center;">Full Rank</td>
+    <td style="text-align:center;vertical-align:center;">Full Rank</td>
+    <td style="text-align:center;vertical-align:center;">-</td>
+    <td style="text-align:center;vertical-align:center;">Full Rank</td>
+    <td style="text-align:center;vertical-align:center;">Irreps</td>
   </tr>
   <tr>
-    <td>IVIM-DTI</td>
-    <td>Full Rank</td>
-    <td>Full Rank<br></td>
-    <td>Irreps<br></td>
-    <td>- </td>
-    <td>Irreps</td>
+    <td style="text-align:center;vertical-align:center;">IVIM-DTI</td>
+    <td style="text-align:center;vertical-align:center;">Full Rank</td>
+    <td style="text-align:center;vertical-align:center;">Full Rank<br></td>
+    <td style="text-align:center;vertical-align:center;">Irreps<br></td>
+    <td style="text-align:center;vertical-align:center;">- </td>
+    <td style="text-align:center;vertical-align:center;">Irreps</td>
   </tr>
 </tbody>
 </table>
@@ -61,12 +55,9 @@ irreps).
 
 ## Physics Equations
 
-$$
-\begin{gather*}
-\text{DTI} & \quad & S(b, g_k) = S0 \cdot \exp(-b \cdot g_k^T \cdot \bar{D} \cdot g_k) \\
-\text{IVIM-DTI} & \quad & S(b, g_k) = S0 \cdot \Bigr[ f^* \cdot \exp(-b \cdot g_k^T \cdot \bar{D}^* \cdot g_k) + (1 - f^*) \cdot \exp(-b \cdot g_k^T \cdot \bar{D} \cdot g_k) \Bigl]
-\end{gather*}
-$$
+DTI : $\quad \quad \quad  S(b, g_k) = S0 \cdot \exp(-b \cdot g_k^T \cdot \bar{D} \cdot g_k)$
+
+IVIM-DTI : $\quad  S(b, g_k) = S0 \cdot \Bigr[ f^* \cdot \exp(-b \cdot g_k^T \cdot \bar{D}^* \cdot g_k) + (1 - f^*) \cdot \exp(-b \cdot g_k^T \cdot \bar{D} \cdot g_k) \Bigl]$
 
 $S0$ is the baseline signal, $b$ is the b-value, $g_k$ is the diffusion direction vector, $f^*$ is the perfusion fraction, $\bar{D}$ is the 3x3 diffusion tensor, and $\bar{D}^*$ is the pseudo-diffusion tensor.
 
